@@ -1171,7 +1171,7 @@
             }
 
             updateCloudStatus("Menghubungkan...", "amber");
-            showNotification("Mencoba menyinkronkan data dengan Google Sheet...");
+            showNotification("Sedang Tarik Data Pada Database");
 
             fetch(urlInput)
                 .then(response => response.json())
@@ -1193,7 +1193,7 @@
                         renderAll();
                         updateCloudStatus("Tersambung (Cloud)", "emerald");
                         document.getElementById('cloud-sync-status-details').classList.remove('hidden');
-                        showNotification("Koneksi berhasil! Seluruh data disinkronkan.");
+                        showNotification("Berhasi Tarik Datal!.");
                     }
                 })
                 .catch(err => {
