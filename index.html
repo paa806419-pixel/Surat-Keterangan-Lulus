@@ -73,7 +73,7 @@
                     </div>
                     <div>
                         <h2 class="font-extrabold text-lg tracking-wider text-white">UPT SDN 22 TANAH KERAS</h2>
-                        <p class="text-xs text-blue-100 font-medium">Pengelola : Fauzi, S.Hum.</p>
+                        <p class="text-xs text-blue-100 font-medium">Pengelola : Fauzi, S.Hum</p>
                     </div>
                 </div>
 
@@ -123,7 +123,7 @@
 
                 <div class="text-center lg:text-left">
                     <h3 class="text-2xl font-extrabold text-slate-950">SELAMAT DATANG</h3>
-                    <p class="text-sm text-slate-800 mt-2">APLIKASI SURAT KETERANGAN LULUS.</p>
+                    <p class="text-sm text-slate-800 mt-2">Aplikasi Surat Keterangan Lulus</p>
                 </div>
 
                 <!-- Error Alert Box -->
@@ -166,7 +166,7 @@
                 </form>
 
                 <div class="text-center text-xs text-slate-900 font-semibold">
-                    Surat Keterangan Lulus  UPT SDN 22 Tanah Keras &copy; 2026.
+                    Sistem Penilaian UPT SDN 22 Tanah Keras &copy; 2026
                 </div>
             </div>
         </div>
@@ -181,11 +181,11 @@
             <div class="p-6 border-b border-white/10">
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 bg-white/20 border border-white/30 rounded-xl flex items-center justify-center shadow-lg overflow-hidden p-1">
-                        <img src="https://iili.io/BLlwHwQ.png" class="w-full h-full object-contain" alt="Logo UPT SDN 22 Tanah Keras">
+                        <img src="https://iili.io/BLlwHwQ.png" class="w-full h-full object-contain" alt="Logo UPT SDN 22">
                     </div>
                     <div>
                         <h2 class="font-extrabold text-sm tracking-wider text-white">UPT SDN 22 TANAH KERAS</h2>
-                        <p class="text-xs text-blue-100 font-medium">Pengelola : Fauzi, S.Hum.</p>
+                        <p class="text-xs text-blue-100 font-medium">Pengeola : Fauzi, S.Hum</p>
                     </div>
                 </div>
             </div>
@@ -222,7 +222,7 @@
                 </button>
                 <button onclick="switchTab('tarik-data')" id="btn-tarik-data" class="w-full flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/></svg>
-                    Tarik Data
+                    Tarik Data 
                 </button>
             </nav>
 
@@ -287,7 +287,7 @@
                             <span class="text-xs font-bold uppercase tracking-widest text-[#27F5E4] bg-[#27F5E4]/10 px-3.5 py-1.5 rounded-full border border-[#27F5E4]/20">Sistem Informasi Kelulusan</span>
                             <h2 class="text-3xl md:text-4xl font-extrabold mt-6 text-white leading-tight">Selamat Datang di Portal SKL UPT SDN 22 Tanah Keras</h2>
                             <p class="mt-4 text-slate-300 text-sm md:text-base leading-relaxed">
-                                Kelola, rekap, dan cetak Surat Keterangan Lulus siswa secara digital dengan akurat, cepat, dan modern. Sesuaikan pengaturan kurikulum, mata pelajaran wajib, muatan lokal, dan cetak langsung.
+                                Kelola, rekap, dan cetak Surat Keterangan Lulus siswa secara digital dengan akurat, cepat, dan modern. Sesuaikan pengaturan kurikulum, mata pelajaran wajib, muatan lokal, and cetak langsung.
                             </p>
                             <div class="mt-8 flex flex-wrap gap-4">
                                 <button onclick="switchTab('pengaturan-kop')" class="bg-[#27F5E4] hover:bg-[#1bc4b5] text-slate-950 font-bold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg shadow-[#27F5E4]/10 text-sm">
@@ -721,7 +721,7 @@
                 <section id="tab-tarik-data" class="hidden space-y-6">
                     <div class="flex items-center justify-between">
                         <div>
-                            <h2 class="text-2xl font-bold text-slate-900">Tarik & Sinkron</h2>
+                            <h2 class="text-2xl font-bold text-slate-900">Tarik Data</h2>
                             <p class="text-xs text-slate-500 mt-1 font-medium">Hubungkan aplikasi dengan Google Sheets untuk menyimpan dan memulihkan seluruh data riil sekolah Anda secara otomatis lintas browser.</p>
                         </div>
                     </div>
@@ -758,7 +758,7 @@
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
                                 </svg>
-                                Hubungkan & Sinkronkan
+                                Hubungkan & Tarik Data
                             </button>
                         </div>
                         
@@ -873,26 +873,26 @@
 
     <!-- JAVASCRIPT LOGIC STATE -->
     <script>
-        // DATA STATE (IN MEMORY STORE)
+        // DATA STATE (IN MEMORY STORE) - Default initialized with the specified school
         let kopMetadata = {
             logoKiri: "",
             logoKanan: "",
-            pemda: "",
-            dinas: "",
-            sekolah: "",
-            kecamatan: "",
-            alamat: "",
-            email: "",
-            website: ""
+            pemda: "PEMERINTAH KABUPATEN PESISIR SELATAN",
+            dinas: "DINAS PENDIDIKAN",
+            sekolah: "UPT SDN 22 TANAH KERAS",
+            kecamatan: "KECAMATAN BAYANG",
+            alamat: "Tanah Keras - Gurun Panjang Barat, Kode Pos 25652",
+            email: "UPTsdn22tanahkeras@gmail.com",
+            website: "www.sdn22tk.my.id"
         };
 
         let sklMetadata = {
-            judul: "",
+            judul: "SURAT KETERANGAN LULUS",
             nomor: "",
             tahunPelajaran: "",
             tglLulus: "",
             kurikulum: "Kurikulum Merdeka",
-            tempat: "",
+            tempat: "Tanah Keras",
             tglDokumen: "",
             kepsek: "",
             nip: "",
@@ -999,7 +999,12 @@
             const savedMapel = localStorage.getItem('mapelList');
             const savedSiswa = localStorage.getItem('siswaList');
 
-            if (savedKop) kopMetadata = JSON.parse(savedKop);
+            if (savedKop) {
+                kopMetadata = JSON.parse(savedKop);
+            } else {
+                localStorage.setItem('kopMetadata', JSON.stringify(kopMetadata));
+            }
+            
             if (savedSkl) sklMetadata = JSON.parse(savedSkl);
             if (savedMapel) mapelList = JSON.parse(savedMapel);
             if (savedSiswa) siswaList = JSON.parse(savedSiswa);
@@ -1035,29 +1040,29 @@
         }
 
         function initForms() {
-            document.getElementById('skl-judul').value = sklMetadata.judul || "";
+            document.getElementById('skl-judul').value = sklMetadata.judul || "SURAT KETERANGAN LULUS";
             document.getElementById('skl-nomor').value = sklMetadata.nomor || "";
             document.getElementById('skl-tahun-pelajaran').value = sklMetadata.tahunPelajaran || "";
             document.getElementById('header-tahun-pelajaran').textContent = sklMetadata.tahunPelajaran || "-";
             document.getElementById('skl-tgl-lulus').value = sklMetadata.tglLulus || "";
             document.getElementById('skl-kurikulum').value = sklMetadata.kurikulum || "Kurikulum Merdeka";
-            document.getElementById('skl-tempat').value = sklMetadata.tempat || "";
+            document.getElementById('skl-tempat').value = sklMetadata.tempat || "Tanah Keras";
             document.getElementById('skl-tgl-dokumen').value = sklMetadata.tglDokumen || "";
             document.getElementById('skl-kepsek').value = sklMetadata.kepsek || "";
             document.getElementById('skl-nip').value = sklMetadata.nip || "";
-            document.getElementById('skl-pengantar').value = sklMetadata.pengantar || "";
-            document.getElementById('skl-pernyataan').value = sklMetadata.pernyataan || "";
-            document.getElementById('skl-penutup').value = sklMetadata.penutup || "";
+            document.getElementById('skl-pengantar').value = sklMetadata.pengantar || "Yang bertanda tangan di bawah ini, Kepala UPT SDN 22 TANAH KERAS menerangkan bahwa:";
+            document.getElementById('skl-pernyataan').value = sklMetadata.pernyataan || "Berdasarkan kriteria kelulusan peserta didik yang ditetapkan oleh satuan pendidikan dan rapat dewan guru, dengan mengacu pada peraturan perundang-undangan yang berlaku, yang bersangkutan dinyatakan:";
+            document.getElementById('skl-penutup').value = sklMetadata.penutup || "Demikianlah Surat keterangan ini dibuat, untuk dapat dipergunakan sebagaimana mestinya.";
 
             document.getElementById('kop-logo-kiri').value = kopMetadata.logoKiri || "";
             document.getElementById('kop-logo-kanan').value = kopMetadata.logoKanan || "";
-            document.getElementById('kop-pemda').value = kopMetadata.pemda || "";
-            document.getElementById('kop-dinas').value = kopMetadata.dinas || "";
-            document.getElementById('kop-sekolah').value = kopMetadata.sekolah || "";
-            document.getElementById('kop-kecamatan').value = kopMetadata.kecamatan || "";
-            document.getElementById('kop-alamat').value = kopMetadata.alamat || "";
-            document.getElementById('kop-email').value = kopMetadata.email || "";
-            document.getElementById('kop-website').value = kopMetadata.website || "";
+            document.getElementById('kop-pemda').value = kopMetadata.pemda || "PEMERINTAH KABUPATEN PESISIR SELATAN";
+            document.getElementById('kop-dinas').value = kopMetadata.dinas || "DINAS PENDIDIKAN";
+            document.getElementById('kop-sekolah').value = kopMetadata.sekolah || "UPT SDN 22 TANAH KERAS";
+            document.getElementById('kop-kecamatan').value = kopMetadata.kecamatan || "KECAMATAN BAYANG";
+            document.getElementById('kop-alamat').value = kopMetadata.alamat || "Tanah Keras - Gurun Panjang Barat, Kode Pos 25652";
+            document.getElementById('kop-email').value = kopMetadata.email || "UPTsdn22tanahkeras@gmail.com";
+            document.getElementById('kop-website').value = kopMetadata.website || "www.sdn22tk.my.id";
 
             const scriptUrl = localStorage.getItem('gscript_web_app_url') || DEFAULT_GSCRIPT_URL;
             document.getElementById('gscript-url-input').value = scriptUrl;
@@ -1640,9 +1645,7 @@
                     padding-right: ${right}mm !important;
                     box-sizing: border-box !important;
                     font-family: 'Cambria', 'Georgia', serif !important;
-                }
-                #print-area * {
-                    font-family: 'Cambria', 'Georgia', serif !important;
+                    font-size: 12pt !important;
                 }
                 
                 .print-page {
@@ -1659,42 +1662,33 @@
                     page-break-after: always !important;
                     break-after: page !important;
                     font-family: 'Cambria', 'Georgia', serif !important;
-                }
-                .print-page * {
-                    font-family: 'Cambria', 'Georgia', serif !important;
+                    font-size: 12pt !important;
                 }
 
                 @media print {
                     @page {
                         size: ${width} ${height};
-                        margin: 0 !important;
+                        margin: ${top}mm ${right}mm ${bottom}mm ${left}mm !important;
                     }
                     #print-area {
-                        width: ${width} !important;
-                        height: ${height} !important;
+                        width: 100% !important;
+                        height: 100% !important;
                         padding: 0 !important;
                         margin: 0 !important;
                         border: none !important;
                         font-family: 'Cambria', 'Georgia', serif !important;
-                    }
-                    #print-area * {
-                        font-family: 'Cambria', 'Georgia', serif !important;
+                        font-size: 12pt !important;
                     }
                     .print-page {
-                        width: ${width} !important;
-                        height: ${height} !important;
-                        padding-top: ${top}mm !important;
-                        padding-bottom: ${bottom}mm !important;
-                        padding-left: ${left}mm !important;
-                        padding-right: ${right}mm !important;
+                        width: 100% !important;
+                        height: 100% !important;
+                        padding: 0 !important;
                         margin: 0 !important;
                         border: none !important;
                         page-break-after: always !important;
                         break-after: page !important;
                         font-family: 'Cambria', 'Georgia', serif !important;
-                    }
-                    .print-page * {
-                        font-family: 'Cambria', 'Georgia', serif !important;
+                        font-size: 12pt !important;
                     }
                     .print-page:last-child {
                         page-break-after: avoid !important;
@@ -1747,8 +1741,8 @@
             const wajibMapels = mapelList.filter(m => m.kategori === 'Wajib');
             if (wajibMapels.length > 0) {
                 gradesHtml += `
-                    <tr class="bg-slate-50">
-                        <td class="border border-black px-2 py-1 font-bold text-left" colspan="3">Kelompok Wajib</td>
+                    <tr class="bg-slate-50" style="font-size: 11pt !important;">
+                        <td class="border border-black px-2 py-1 font-bold text-left" colspan="3" style="font-size: 11pt !important;">Kelompok Wajib</td>
                     </tr>
                 `;
                 wajibMapels.forEach(m => {
@@ -1758,10 +1752,10 @@
                         mapelCount++;
                     }
                     gradesHtml += `
-                        <tr>
-                            <td class="border border-black px-2 py-1 text-center">${counter++}</td>
-                            <td class="border border-black px-2 py-1 text-left">${m.nama}</td>
-                            <td class="border border-black px-2 py-1 text-center font-bold">${formatNilai(score)}</td>
+                        <tr style="font-size: 11pt !important;">
+                            <td class="border border-black px-2 py-1 text-center" style="font-size: 11pt !important;">${counter++}</td>
+                            <td class="border border-black px-2 py-1 text-left" style="font-size: 11pt !important;">${m.nama}</td>
+                            <td class="border border-black px-2 py-1 text-center font-bold" style="font-size: 11pt !important;">${formatNilai(score)}</td>
                         </tr>
                     `;
                 });
@@ -1770,8 +1764,8 @@
             const mulokMapels = mapelList.filter(m => m.kategori === 'Muatan Lokal');
             if (mulokMapels.length > 0) {
                 gradesHtml += `
-                    <tr class="bg-slate-50">
-                        <td class="border border-black px-2 py-1 font-bold text-left" colspan="3">Kelompok Muatan Lokal</td>
+                    <tr class="bg-slate-50" style="font-size: 11pt !important;">
+                        <td class="border border-black px-2 py-1 font-bold text-left" colspan="3" style="font-size: 11pt !important;">Kelompok Muatan Lokal</td>
                     </tr>
                 `;
                 mulokMapels.forEach(m => {
@@ -1781,10 +1775,10 @@
                         mapelCount++;
                     }
                     gradesHtml += `
-                        <tr>
-                            <td class="border border-black px-2 py-1 text-center">${counter++}</td>
-                            <td class="border border-black px-2 py-1 text-left">${m.nama}</td>
-                            <td class="border border-black px-2 py-1 text-center font-bold">${formatNilai(score)}</td>
+                        <tr style="font-size: 11pt !important;">
+                            <td class="border border-black px-2 py-1 text-center" style="font-size: 11pt !important;">${counter++}</td>
+                            <td class="border border-black px-2 py-1 text-left" style="font-size: 11pt !important;">${m.nama}</td>
+                            <td class="border border-black px-2 py-1 text-center font-bold" style="font-size: 11pt !important;">${formatNilai(score)}</td>
                         </tr>
                     `;
                 });
@@ -1793,9 +1787,9 @@
             if (mapelCount > 0) {
                 const avg = sumGrades / mapelCount;
                 gradesHtml += `
-                    <tr class="bg-slate-100 font-bold">
-                        <td class="border border-black px-2 py-1.5 text-right" colspan="2">RATA-RATA NILAI</td>
-                        <td class="border border-black px-2 py-1.5 text-center text-sm font-extrabold">${formatNilai(avg)}</td>
+                    <tr class="bg-slate-100 font-bold" style="font-size: 12pt !important;">
+                        <td class="border border-black px-2 py-1.5 text-right" colspan="2" style="font-size: 12pt !important;">RATA-RATA NILAI</td>
+                        <td class="border border-black px-2 py-1.5 text-center text-sm font-extrabold" style="font-size: 12pt !important;">${formatNilai(avg)}</td>
                     </tr>
                 `;
             }
@@ -1817,19 +1811,19 @@
             return `
                 ${pageWrapperStart}
                 ${watermarkHtml}
-                <div class="relative z-10">
-                    <!-- Kop Surat -->
-                    <div class="border-b-4 border-double border-black pb-4 text-center relative flex justify-between items-center px-12">
+                <div class="relative z-10" style="font-size: 12pt !important;">
+                    <!-- Kop Surat Resmi (Sangat Rapat & Profesional) -->
+                    <div class="border-b-4 border-double border-black pb-3 text-center relative flex justify-between items-center px-12" style="line-height: 1.15 !important;">
                         <div class="w-20 h-20 flex items-center justify-center">
                             <img class="max-w-full max-h-full object-contain" src="${logoKiriUrl}" onerror="useFallbackLogoKiri(this)">
                         </div>
                         <div class="text-center flex-1 mx-4">
-                            <h3 class="text-base font-bold tracking-wider leading-tight uppercase">${kopMetadata.pemda || "[NAMA PEMERINTAH DAERAH BELUM DIATUR]"}</h3>
-                            <h3 class="text-sm font-medium leading-tight uppercase">${kopMetadata.dinas || "[NAMA DINAS PENDIDIKAN BELUM DIATUR]"}</h3>
-                            <h2 class="text-lg font-black leading-tight uppercase">${kopMetadata.sekolah || "[NAMA SEKOLAH BELUM DIATUR]"}</h2>
-                            <p class="text-[11px] font-semibold tracking-wide leading-tight">${kopMetadata.kecamatan || "[KECAMATAN BELUM DIATUR]"}</p>
-                            <p class="text-[10px] italic mt-0.5 font-serif">Alamat: ${kopMetadata.alamat || "[ALAMAT BELUM DIATUR]"}</p>
-                            <p class="text-[9px] font-sans text-slate-800 mt-0.5">Email: ${kopMetadata.email || "-"} | Website: ${kopMetadata.website || "-"}</p>
+                            <h3 class="font-bold tracking-wider uppercase" style="font-size: 16pt !important; margin: 0 0 1px 0 !important; padding: 0 !important; line-height: 1.15 !important;">${kopMetadata.pemda || "[NAMA PEMERINTAH DAERAH BELUM DIATUR]"}</h3>
+                            <h3 class="font-semibold uppercase" style="font-size: 12pt !important; margin: 0 0 1px 0 !important; padding: 0 !important; line-height: 1.15 !important;">${kopMetadata.dinas || "[NAMA DINAS PENDIDIKAN BELUM DIATUR]"}</h3>
+                            <h2 class="font-black uppercase" style="font-size: 15pt !important; margin: 0 0 1px 0 !important; padding: 0 !important; line-height: 1.15 !important;">${kopMetadata.sekolah || "[NAMA SEKOLAH BELUM DIATUR]"}</h2>
+                            <p class="font-bold uppercase" style="font-size: 11pt !important; margin: 0 0 2px 0 !important; padding: 0 !important; line-height: 1.15 !important;">${kopMetadata.kecamatan || "[KECAMATAN BELUM DIATUR]"}</p>
+                            <p class="italic font-serif" style="font-size: 10pt !important; margin: 0 0 1px 0 !important; padding: 0 !important; line-height: 1.15 !important;">Alamat: ${kopMetadata.alamat || "[ALAMAT BELUM DIATUR]"}</p>
+                            <p class="font-sans text-slate-800" style="font-size: 9pt !important; margin: 0 !important; padding: 0 !important; line-height: 1.15 !important;">Email: ${kopMetadata.email || "-"} | Website: ${kopMetadata.website || "-"}</p>
                         </div>
                         <div class="w-20 h-20 flex items-center justify-center">
                             <img class="max-w-full max-h-full object-contain" src="${logoKananUrl}" onerror="useFallbackLogoKanan(this)">
@@ -1837,54 +1831,54 @@
                     </div>
 
                     <!-- Judul Surat -->
-                    <div class="text-center mt-8">
-                        <h1 class="text-lg font-extrabold tracking-wide uppercase underline">${sklMetadata.judul || "SURAT KETERANGAN LULUS"}</h1>
-                        <p class="text-sm font-medium mt-1">Nomor: <span>${sklMetadata.nomor || "[NOMOR BELUM DIATUR]"}</span></p>
+                    <div class="text-center mt-6">
+                        <h1 class="font-extrabold tracking-wide uppercase underline" style="font-size: 14pt !important;">${sklMetadata.judul || "SURAT KETERANGAN LULUS"}</h1>
+                        <p class="font-medium mt-1" style="font-size: 11pt !important;">Nomor: <span>${sklMetadata.nomor || "[NOMOR BELUM DIATUR]"}</span></p>
                     </div>
 
                     <!-- Isi Surat -->
-                    <div class="mt-8 text-sm leading-relaxed text-justify space-y-4 font-sans px-8">
-                        <p>${sklMetadata.pengantar || "[Silakan isi kalimat pengantar dokumen di halaman format SKL]"}</p>
+                    <div class="mt-6 text-justify space-y-4 font-sans px-8" style="font-size: 12pt !important; line-height: 1.6 !important;">
+                        <p style="font-size: 12pt !important;">${sklMetadata.pengantar || "[Silakan isi kalimat pengantar dokumen di halaman format SKL]"}</p>
                         
-                        <table class="w-full ml-6 my-4 text-sm">
+                        <table class="w-full ml-6 my-3 text-sm" style="font-size: 12pt !important;">
                             <tr class="align-top">
-                                <td class="w-56 py-1">Nama Lengkap</td>
-                                <td class="w-4 py-1">:</td>
-                                <td class="font-bold py-1 uppercase">${student.nama}</td>
+                                <td class="w-56 py-1" style="font-size: 12pt !important;">Nama Lengkap</td>
+                                <td class="w-4 py-1" style="font-size: 12pt !important;">:</td>
+                                <td class="font-bold py-1 uppercase" style="font-size: 12pt !important;">${student.nama}</td>
                             </tr>
                             <tr class="align-top">
-                                <td class="py-1">Tempat, Tanggal Lahir</td>
-                                <td class="py-1">:</td>
-                                <td class="py-1">${student.tempatLahir}, ${formattedStBDate}</td>
+                                <td class="py-1" style="font-size: 12pt !important;">Tempat, Tanggal Lahir</td>
+                                <td class="py-1" style="font-size: 12pt !important;">:</td>
+                                <td class="py-1" style="font-size: 12pt !important;">${student.tempatLahir}, ${formattedStBDate}</td>
                             </tr>
                             <tr class="align-top">
-                                <td class="py-1">Nomor Induk Siswa Nasional</td>
-                                <td class="py-1">:</td>
-                                <td class="font-mono py-1">${student.nisn}</td>
+                                <td class="py-1" style="font-size: 12pt !important;">Nomor Induk Siswa Nasional</td>
+                                <td class="py-1" style="font-size: 12pt !important;">:</td>
+                                <td class="font-mono py-1" style="font-size: 12pt !important;">${student.nisn}</td>
                             </tr>
                             <tr class="align-top">
-                                <td class="py-1">Tanggal Kelulusan</td>
-                                <td class="py-1">:</td>
-                                <td class="py-1">${formattedLulusDate}</td>
+                                <td class="py-1" style="font-size: 12pt !important;">Tanggal Kelulusan</td>
+                                <td class="py-1" style="font-size: 12pt !important;">:</td>
+                                <td class="py-1" style="font-size: 12pt !important;">${formattedLulusDate}</td>
                             </tr>
                             <tr class="align-top">
-                                <td class="py-1">Kurikulum</td>
-                                <td class="py-1">:</td>
-                                <td class="py-1">${sklMetadata.kurikulum}</td>
+                                <td class="py-1" style="font-size: 12pt !important;">Kurikulum</td>
+                                <td class="py-1" style="font-size: 12pt !important;">:</td>
+                                <td class="py-1" style="font-size: 12pt !important;">${sklMetadata.kurikulum}</td>
                             </tr>
                         </table>
 
-                        <p>${sklMetadata.pernyataan || "[Silakan isi kalimat pernyataan kriteria di halaman format SKL]"}</p>
+                        <p style="font-size: 12pt !important;">${sklMetadata.pernyataan || "[Silakan isi kalimat pernyataan kriteria di halaman format SKL]"}</p>
                     </div>
 
                     <!-- Daftar Nilai -->
-                    <div class="mt-8 px-8">
-                        <table class="w-full border-collapse border border-black text-xs">
+                    <div class="mt-6 px-8">
+                        <table class="w-full border-collapse border border-black text-xs" style="font-size: 12pt !important;">
                             <thead>
-                                <tr class="bg-slate-100 font-bold">
-                                    <th class="border border-black p-2 w-12 text-center">No</th>
-                                    <th class="border border-black p-2 text-left">Mata Pelajaran</th>
-                                    <th class="border border-black p-2 w-32 text-center">Nilai Ujian</th>
+                                <tr class="bg-slate-100 font-bold" style="font-size: 11pt !important;">
+                                    <th class="border border-black p-1.5 w-12 text-center" style="font-size: 11pt !important;">No</th>
+                                    <th class="border border-black p-1.5 text-left" style="font-size: 11pt !important;">Mata Pelajaran</th>
+                                    <th class="border border-black p-1.5 w-32 text-center" style="font-size: 11pt !important;">Nilai Ujian</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -1894,18 +1888,18 @@
                     </div>
 
                     <!-- Kalimat Penutup -->
-                    <div class="mt-6 text-sm leading-relaxed text-justify px-8 font-sans">
-                        ${sklMetadata.penutup || "[Silakan isi kalimat penutup dokumen di halaman format SKL]"}
+                    <div class="mt-5 text-justify px-8 font-sans" style="font-size: 12pt !important; line-height: 1.6 !important;">
+                        <p style="font-size: 12pt !important;">${sklMetadata.penutup || "[Silakan isi kalimat penutup dokumen di halaman format SKL]"}</p>
                     </div>
 
                     <!-- Bagian Tanda Tangan -->
-                    <div class="mt-12 flex justify-end px-8">
-                        <div class="text-center w-80 text-sm">
-                            <p><span>${sklMetadata.tempat || "Tanah Keras"}</span>, <span>${formattedDocDate}</span></p>
-                            <p class="mt-1">Kepala Sekolah,</p>
+                    <div class="mt-10 flex justify-end px-8">
+                        <div class="text-center w-80 text-sm" style="font-size: 12pt !important;">
+                            <p style="font-size: 12pt !important;"><span>${sklMetadata.tempat || "Tanah Keras"}</span>, <span>${formattedDocDate}</span></p>
+                            <p class="mt-1" style="font-size: 12pt !important;">Kepala Sekolah,</p>
                             <div class="h-24"></div>
-                            <p class="font-extrabold underline">${formattedKepsek}</p>
-                            <p class="text-xs">NIP. <span>${sklMetadata.nip || "[NIP KEPALA SEKOLAH]"}</span></p>
+                            <p class="font-extrabold underline" style="font-size: 12pt !important;">${formattedKepsek}</p>
+                            <p style="font-size: 10pt !important;">NIP. <span>${sklMetadata.nip || "[NIP KEPALA SEKOLAH]"}</span></p>
                         </div>
                     </div>
                 </div>
@@ -1971,7 +1965,7 @@
             const content = document.createElement('div');
             content.className = 'flex items-center gap-2';
             content.innerHTML = `
-                <span class="w-2 h-2 rounded-full bg-[#27F5E4] animate-pulse"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#27F5E4] animate-pulse"></span>
                 <span>${message}</span>
             `;
             toast.appendChild(content);
