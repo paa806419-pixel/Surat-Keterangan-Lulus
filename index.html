@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikasi SKL</title>
     <!-- Favicon Link -->
-    <link rel="icon" type="image/png" href="https://iili.io/BLlwHwQ.png">
+    <link class="no-print" rel="icon" type="image/png" href="https://iili.io/BLlwHwQ.png">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -73,7 +73,7 @@
                     </div>
                     <div>
                         <h2 class="font-extrabold text-lg tracking-wider text-white">UPT SDN 22 TANAH KERAS</h2>
-                        <p class="text-xs text-blue-100 font-medium">Pengelola : Fauzi, S.Hum.</p>
+                        <p class="text-xs text-blue-100 font-medium">Pengelola : Fauzi, S.Hum</p>
                     </div>
                 </div>
 
@@ -104,7 +104,7 @@
             <!-- Tombol Layar Penuh di Kanan Atas Form Login -->
             <button onclick="toggleFullscreen()" class="absolute top-6 right-6 z-20 flex items-center gap-2 px-4 py-2.5 border border-slate-950/20 rounded-xl bg-slate-950 hover:bg-slate-900 text-white transition-all text-xs font-bold active:scale-[0.98]">
                 <svg id="fullscreen-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l-5-5m11 5v-4m0 4h-4m4 0l-5-5"/>
                 </svg>
                 <span id="fullscreen-text">Layar Penuh</span>
             </button>
@@ -122,8 +122,8 @@
                 </div>
 
                 <div class="text-center lg:text-left">
-                    <h3 class="text-2xl font-extrabold text-slate-950">Selamat Datang</h3>
-                    <p class="text-sm text-slate-800 mt-2">Aplikasi Surat Surat Keterangan Lulus</p>
+                    <h3 class="text-2xl font-extrabold text-slate-950">SELAMAT DATANG</h3>
+                    <p class="text-sm text-slate-800 mt-2">APLIKASI SURAT KETERANGAN LULUS.</p>
                 </div>
 
                 <!-- Error Alert Box -->
@@ -161,18 +161,18 @@
                     </div>
 
                     <button type="submit" class="w-full bg-slate-950 hover:bg-slate-900 text-[#27F5E4] hover:text-white font-extrabold py-4 rounded-xl shadow-lg transition-all transform active:scale-[0.98] tracking-wider text-sm uppercase">
-                        Masuk
+                        Masuk ke Aplikasi
                     </button>
                 </form>
 
                 <div class="text-center text-xs text-slate-900 font-semibold">
-                    Surat Keterangan Lulus UPT SDN 22 Tanah Keras &copy; 2026.
+                    Sistem Penilaian UPT SDN 22 Tanah Keras &copy; 2026. 
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- MAIN SYSTEM CONTENT CONTAINER (Hidden by default until logged in) -->
+    <!-- MAIN SYSTEM CONTENT CONTAINER -->
     <div id="main-app" class="hidden flex-1 flex">
 
         <!-- SIDEBAR -->
@@ -181,7 +181,7 @@
             <div class="p-6 border-b border-white/10">
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 bg-white/20 border border-white/30 rounded-xl flex items-center justify-center shadow-lg overflow-hidden p-1">
-                        <img src="https://iili.io/BLlwHwQ.png" class="w-full h-full object-contain" alt="Logo UPT SDN 22">
+                        <img src="https://iili.io/BLlwHwQ.png" class="w-full h-full object-contain animate-pulse" alt="Logo UPT SDN 22">
                     </div>
                     <div>
                         <h2 class="font-extrabold text-sm tracking-wider text-white">UPT SDN 22 TK</h2>
@@ -191,38 +191,42 @@
             </div>
 
             <!-- Navigation Menu -->
-            <nav class="flex-1 p-4 space-y-2 overflow-y-auto">
-                <button onclick="switchTab('beranda')" id="btn-beranda" class="w-full flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-bold transition-all duration-300 bg-[#27F5E4] text-slate-950 shadow-lg shadow-[#27F5E4]/10">
+            <nav class="flex-1 p-4 space-y-1.5 overflow-y-auto">
+                <button onclick="switchTab('beranda')" id="btn-beranda" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-bold transition-all duration-300 bg-[#27F5E4] text-slate-950 shadow-lg shadow-[#27F5E4]/10">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
                     Beranda
                 </button>
-                <button onclick="switchTab('data-skl')" id="btn-data-skl" class="w-full flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
+                <button onclick="switchTab('data-skl')" id="btn-data-skl" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                    Data SKL
+                    Data SKL (Format)
                 </button>
-                <button onclick="switchTab('data-siswa')" id="btn-data-siswa" class="w-full flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
+                <button onclick="switchTab('data-siswa')" id="btn-data-siswa" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
                     Data Siswa
                 </button>
-                <button onclick="switchTab('mata-pelajaran')" id="btn-mata-pelajaran" class="w-full flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
+                <button onclick="switchTab('mata-pelajaran')" id="btn-mata-pelajaran" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253"/></svg>
                     Mata Pelajaran
                 </button>
-                <button onclick="switchTab('input-nilai')" id="btn-input-nilai" class="w-full flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
+                <button onclick="switchTab('input-nilai')" id="btn-input-nilai" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
                     Input Nilai Siswa
                 </button>
-                <button onclick="switchTab('cetak-skl')" id="btn-cetak-skl" class="w-full flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
+                <button onclick="switchTab('cetak-skl')" id="btn-cetak-skl" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-3a2 2 0 00-2-2H9a2 2 0 00-2 2v3a2 2 0 002 2zm5-17V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
                     Cetak SKL
                 </button>
-                <button onclick="switchTab('pengaturan-kop')" id="btn-pengaturan-kop" class="w-full flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <button onclick="switchTab('pengaturan-kop')" id="btn-pengaturan-kop" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31(2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                     Pengaturan KOP Surat
                 </button>
-                <button onclick="switchTab('tarik-data')" id="btn-tarik-data" class="w-full flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
+                <button onclick="switchTab('tarik-data')" id="btn-tarik-data" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/></svg>
                     Tarik Data 
+                </button>
+                <button onclick="switchTab('arsip-data')" id="btn-arsip-data" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+                    Arsip Data 
                 </button>
             </nav>
 
@@ -232,7 +236,7 @@
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
                     </svg>
-                    KELUAR
+                    Keluar 
                 </button>
                 <div class="flex items-center gap-3 text-xs text-blue-100 px-4">
                     <span class="flex h-2.5 w-2.5 relative">
@@ -244,12 +248,11 @@
             </div>
         </aside>
 
-        <!-- CONTENT WRAPPER (Pure White & Clean Workspace) -->
+        <!-- CONTENT WRAPPER -->
         <main class="flex-1 md:ml-72 min-h-screen flex flex-col bg-slate-50 pb-12 relative text-slate-800">
             <!-- HEADER -->
             <header class="bg-white border-b border-slate-200 py-4 px-6 md:px-8 flex justify-between items-center sticky top-0 z-20 no-print shadow-sm">
                 <div class="flex items-center gap-4">
-                    <!-- Mobile Menu Button -->
                     <button onclick="toggleSidebar()" class="md:hidden p-2 text-slate-600 hover:bg-slate-100 rounded-lg">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                     </button>
@@ -352,8 +355,8 @@
                             </div>
                             <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
                                 <span class="text-lg font-bold text-[#1bc4b5] block mb-1">04</span>
-                                <span class="font-bold text-slate-900 block mb-1">Cetak Instan</span>
-                                Pilih siswa di tab Cetak SKL, lalu lakukan pencetakan lembar resmi SKL beserta nilainya secara otomatis.
+                                <span class="font-bold text-slate-900 block mb-1">Cetak & Arsip</span>
+                                Pilih siswa di tab Cetak SKL, cetak dokumen fisik, lalu kunci dan simpan seluruh database ke menu **Arsip Data** per tahun pelajaran.
                             </div>
                         </div>
                     </div>
@@ -364,7 +367,7 @@
                     <div class="flex items-center justify-between">
                         <div>
                             <h2 class="text-2xl font-bold text-slate-900">Pengaturan KOP Surat Resmi</h2>
-                            <p class="text-xs text-slate-500 mt-1">Sesuaikan kop surat yang dicetak secara resmi, termasuk logo kiri, kanan, dan profil instansi.</p>
+                            <p class="text-xs text-slate-500 mt-1">Sesuaikan kop surat yang dicetak secara resmi, termasuk logo kiri, kanan, and profil instansi.</p>
                         </div>
                     </div>
 
@@ -422,8 +425,8 @@
                 <section id="tab-data-skl" class="hidden space-y-6">
                     <div class="flex items-center justify-between">
                         <div>
-                            <h2 class="text-2xl font-bold text-slate-900">Pengaturan Format SKL</h2>
-                            <p class="text-xs text-slate-500 mt-1">Data ini digunakan sebagai template header, nomor, penanggalan, dan penandatanganan dokumen SKL.</p>
+                            <h2 class="text-2xl font-bold text-slate-900">Pengaturan Format & Metadata SKL</h2>
+                            <p class="text-xs text-slate-500 mt-1">Data ini digunakan sebagai template header, nomor, penandatanganan dokumen, dan penanggalan.</p>
                         </div>
                     </div>
 
@@ -557,6 +560,7 @@
                             </select>
                         </div>
 
+                        <!-- Form pembungkus nilai -->
                         <div id="grades-form-wrapper" class="hidden space-y-6 border-t border-slate-200 pt-6">
                             <div id="dynamic-grades-inputs" class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <!-- Input Nilai Mapel akan dirender di sini secara otomatis -->
@@ -583,10 +587,35 @@
                             <h2 class="text-2xl font-bold text-slate-900">Daftar Mata Pelajaran</h2>
                             <p class="text-xs text-slate-500 mt-1">Kelola daftar pelajaran wajib dan muatan lokal yang diujikan dalam SKL.</p>
                         </div>
-                        <button onclick="openMapelModal()" class="bg-[#27F5E4] hover:bg-[#1bc4b5] text-slate-950 font-bold px-5 py-3 rounded-xl shadow-md text-sm flex items-center justify-center gap-2 transition-all">
+                        <button onclick="openMapelModal()" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-5 py-3 rounded-xl shadow-md text-sm flex items-center justify-center gap-2 transition-all">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
-                            Tambah Mata Pelajaran
+                            Gunakan Modal Form
                         </button>
+                    </div>
+
+                    <!-- FORM CEPAT INLINE -->
+                    <div class="bg-gradient-to-r from-slate-50 to-blue-50 border border-blue-200 rounded-2xl p-6 shadow-sm">
+                        <h3 class="font-extrabold text-slate-900 text-xs uppercase tracking-wider mb-3 flex items-center gap-2 text-[#008CFF]">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#008CFF]"></span>
+                            Tambah Cepat Mata Pelajaran (Form Utama)
+                        </h3>
+                        <form id="inline-form-mapel" onsubmit="event.preventDefault(); saveMapelDataInline();" class="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
+                            <div class="space-y-1.5">
+                                <label class="block text-xs font-semibold text-slate-700">Nama Mata Pelajaran</label>
+                                <input type="text" id="inline-mapel-nama" placeholder="Contoh: Seni Rupa, BAM, Pancasila" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-[#27F5E4] font-semibold">
+                            </div>
+                            <div class="space-y-1.5">
+                                <label class="block text-xs font-semibold text-slate-700">Kategori Kelompok</label>
+                                <select id="inline-mapel-kategori" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-[#27F5E4] font-semibold">
+                                    <option value="Wajib">Mata Pelajaran Wajib</option>
+                                    <option value="Muatan Lokal">Mata Pelajaran Muatan Lokal</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="bg-[#27F5E4] hover:bg-[#1bc4b5] text-slate-950 font-extrabold py-3 px-5 rounded-xl text-sm transition-all flex items-center justify-center gap-2 shadow-md">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                                Simpan Pelajaran
+                            </button>
+                        </form>
                     </div>
 
                     <!-- Pembagian Grid Pelajaran -->
@@ -667,11 +696,15 @@
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
                                 Cetak Semua Siswa (0)
                             </button>
+                            <button onclick="triggerArchiveCurrentYear()" class="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white font-bold px-6 py-3.5 rounded-xl shadow-md text-sm flex items-center justify-center gap-2 transition-all w-full md:w-auto">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-2m-4-1v8m0 0l3-3m-3 3L9 8m-5 5h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293h3.172a1 1 0 00.707-.293l2.414-2.414a1 1 0 01.707-.293H20"/></svg>
+                                Arsipkan Data Aktif
+                            </button>
                         </div>
                     </div>
 
                     <!-- PENGATURAN MARGIN DAN UKURAN KERTAS -->
-                    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+                    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4 font-sans text-slate-800">
                         <h3 class="font-extrabold text-slate-900 text-sm uppercase tracking-wider flex items-center gap-2">
                             <span class="w-2.5 h-2.5 rounded-full bg-[#1bc4b5]"></span>
                             Pengaturan Tata Letak Cetak (Kertas & Margin)
@@ -716,7 +749,7 @@
                 <section id="tab-tarik-data" class="hidden space-y-6">
                     <div class="flex items-center justify-between">
                         <div>
-                            <h2 class="text-2xl font-bold text-slate-900">Tarik Data</h2>
+                            <h2 class="text-2xl font-bold text-slate-900">Tarik & Sinkronkan Data Cloud</h2>
                             <p class="text-xs text-slate-500 mt-1 font-medium">Hubungkan aplikasi dengan Google Sheets untuk menyimpan dan memulihkan seluruh data riil sekolah Anda secara otomatis lintas browser.</p>
                         </div>
                     </div>
@@ -729,7 +762,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-base font-extrabold text-slate-900">Koneksi Database</h3>
+                                <h3 class="text-base font-extrabold text-slate-900">Koneksi Database Cloud Google Sheets</h3>
                                 <p class="text-xs text-slate-500 mt-0.5">Integrasikan sistem dengan Google Apps Script Web App untuk pemulihan dan penyimpanan terpusat.</p>
                             </div>
                         </div>
@@ -740,28 +773,118 @@
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2a4 4 0 00-4-4H5m10 4v-2a4 4 0 014-4h5M2 20h20M5 17V5a2 2 0 012-2h10a2 2 0 012 2v12"/>
                                 </svg>
-                                Database
+                                Database (Buka Google Sheet)
                             </a>
                         </div>
                         
-                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-end border-t border-slate-100 pt-4">
-                            <div class="md:col-span-3 space-y-1.5">
+                        <!-- Panel Kontrol Koneksi Database -->
+                        <div class="space-y-4 border-t border-slate-100 pt-4">
+                            <div class="space-y-1.5">
                                 <label class="block text-xs font-bold uppercase tracking-wider text-slate-700">URL Web App Google Apps Script</label>
                                 <input type="text" id="gscript-url-input" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-[#27F5E4] transition-all font-semibold" placeholder="https://script.google.com/macros/s/.../exec">
                             </div>
-                            <button onclick="connectGoogleSheets()" class="w-full bg-slate-950 hover:bg-slate-900 text-[#27F5E4] hover:text-white font-extrabold py-3.5 rounded-xl text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-md active:scale-95">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
-                                </svg>
-                                Hubungkan & Tarik Data
-                            </button>
+                            
+                            <!-- Penataan Grouping Tombol Hubungkan, Putuskan, dan Tarik Data -->
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                                <button onclick="connectCloudDatabase()" class="bg-slate-950 hover:bg-slate-900 text-[#27F5E4] hover:text-white font-extrabold py-3.5 rounded-xl text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-md active:scale-95">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                                    </svg>
+                                    Hubungkan
+                                </button>
+                                
+                                <button onclick="disconnectCloudDatabase()" class="bg-rose-600 hover:bg-rose-500 text-white font-extrabold py-3.5 rounded-xl text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-md active:scale-95">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+                                    </svg>
+                                    Putuskan
+                                </button>
+
+                                <button onclick="pullCloudDatabase()" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-extrabold py-3.5 rounded-xl text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-md active:scale-95">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                    </svg>
+                                    Tarik Data
+                                </button>
+                            </div>
                         </div>
                         
                         <div id="cloud-sync-status-details" class="hidden text-xs flex items-center gap-2 text-slate-600 bg-slate-50 p-3.5 rounded-2xl border border-slate-200">
                             <svg class="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
-                            <span class="font-medium">Terhubung Ke Database.</span>
+                            <span class="font-medium">Terhubung ke Google Sheets. Seluruh data (KOP, Format SKL, Siswa, Mapel, dan Nilai) tersinkronisasi otomatis di awan.</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 9. ARSIP DATA (MULTI-YEAR DATABASE) -->
+                <section id="tab-arsip-data" class="hidden space-y-6">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-900">Arsip Data Kelulusan (Multi-Tahun)</h2>
+                            <p class="text-xs text-slate-500 mt-1 font-medium">Cari, lihat, dan cetak ulang data kelulusan tahun ajaran lampau yang telah diarsipkan tanpa mengganggu data aktif berjalan.</p>
+                        </div>
+                        
+                        <!-- Filter Tahun Pelajaran Arsip -->
+                        <div class="flex items-center gap-2">
+                            <label class="text-xs font-bold text-slate-500 uppercase">Tahun:</label>
+                            <select id="filter-tahun-arsip" onchange="renderArsipTable()" class="bg-white border border-slate-300 rounded-xl px-4 py-2 text-xs font-bold text-slate-700 focus:outline-none focus:border-[#27F5E4]">
+                                <option value="Semua">-- Semua Tahun Pelajaran --</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Panel Ringkasan Arsip Terdaftar -->
+                    <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="border-b border-slate-200 bg-slate-50 text-xs font-semibold tracking-wider text-slate-500 uppercase">
+                                        <th class="py-4 px-6">Tahun Pelajaran</th>
+                                        <th class="py-4 px-6">Tanggal Diarsipkan</th>
+                                        <th class="py-4 px-6 text-center">Jumlah Siswa</th>
+                                        <th class="py-4 px-6 text-right">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="arsip-table-body" class="divide-y divide-slate-200 text-sm text-slate-700">
+                                    <!-- Daftar Arsip Tahunan -->
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div id="arsip-empty-state" class="py-12 text-center hidden">
+                            <svg class="w-12 h-12 text-slate-300 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+                            <p class="text-slate-500 font-medium">Belum ada data kelulusan yang diarsipkan</p>
+                            <p class="text-xs text-slate-400 mt-1">Anda dapat melakukan pengarsipan pada menu **Cetak SKL**.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sub Panel: Detail Siswa dalam Arsip Terpilih -->
+                    <div id="arsip-detail-container" class="hidden bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+                        <div class="flex items-center justify-between pb-3 border-b border-slate-200">
+                            <h3 class="font-extrabold text-slate-900 text-sm uppercase tracking-wider flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse"></span>
+                                Daftar Siswa Lulusan Tahun Pelajaran: <span id="arsip-detail-title" class="text-blue-600 underline"></span>
+                            </h3>
+                            <button onclick="closeArsipDetail()" class="text-xs font-bold text-rose-500 hover:text-rose-700 uppercase">Tutup Detail</button>
+                        </div>
+                        
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left">
+                                <thead>
+                                    <tr class="text-xs font-bold text-slate-500 uppercase border-b border-slate-100">
+                                        <th class="pb-3 px-2">Nama Lengkap</th>
+                                        <th class="pb-3 px-2">NISN</th>
+                                        <th class="pb-3 px-2 text-slate-500">Tempat, Tanggal Lahir</th>
+                                        <th class="pb-3 px-2 text-center">Rata-Rata Nilai</th>
+                                        <th class="pb-3 px-2 text-right">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="arsip-siswa-table-body" class="divide-y divide-slate-100 text-xs text-slate-700">
+                                    <!-- Daftar Siswa dalam Arsip Terpilih -->
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </section>
@@ -829,7 +952,7 @@
                 <div>
                     <h3 class="text-2xl font-extrabold text-slate-900 flex items-center gap-2">
                         <svg class="w-8 h-8 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-                        Tambah Mata Pelajaran Baru
+                        Tambah Mata Pelajaran (Modal Alternatif)
                     </h3>
                     <p class="text-xs text-slate-400 mt-1">Tambahkan mata pelajaran wajib atau muatan lokal untuk struktur SKL.</p>
                 </div>
@@ -866,10 +989,36 @@
         </div>
     </div>
 
+    <!-- CUSTOM CONFIRMATION MODAL -->
+    <div id="modal-confirm" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden no-print">
+        <div class="bg-white border border-slate-200 rounded-3xl w-full max-w-md shadow-2xl p-6 md:p-8 text-slate-800 space-y-6">
+            <div class="flex items-start gap-4">
+                <div class="p-3 bg-amber-50 text-amber-600 border border-amber-200 rounded-2xl flex-shrink-0" id="confirm-modal-icon">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                </div>
+                <div class="space-y-1.5 flex-1">
+                    <h3 class="text-xl font-extrabold text-slate-900" id="confirm-modal-title">Konfirmasi Tindakan</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed" id="confirm-modal-message">Apakah Anda yakin ingin melakukan hal tersebut?</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center justify-end gap-3 pt-2">
+                <button id="btn-confirm-cancel" class="px-5 py-3 border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold rounded-xl text-xs uppercase tracking-wider transition-all">
+                    Batal
+                </button>
+                <button id="btn-confirm-ok" class="px-6 py-3 bg-slate-950 text-white hover:bg-slate-900 font-extrabold rounded-xl text-xs uppercase tracking-wider transition-all">
+                    Ya, Lanjutkan
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- JAVASCRIPT LOGIC STATE -->
     <script>
-        // DATA STATE (IN MEMORY STORE) - Default initialized with the specified school
-        let kopMetadata = {
+        // DATA STATE (IN MEMORY STORE WITH ROBUST FALLBACKS)
+        const defaultKop = {
             logoKiri: "",
             logoKanan: "",
             pemda: "PEMERINTAH KABUPATEN PESISIR SELATAN",
@@ -881,7 +1030,7 @@
             website: "www.sdn22tk.my.id"
         };
 
-        let sklMetadata = {
+        const defaultSkl = {
             judul: "SURAT KETERANGAN LULUS",
             nomor: "",
             tahunPelajaran: "",
@@ -891,16 +1040,32 @@
             tglDokumen: "",
             kepsek: "",
             nip: "",
-            pengantar: "",
-            pernyataan: "",
-            penutup: ""
+            pengantar: "Yang bertanda tangan di bawah ini, Kepala UPT SDN 22 TANAH KERAS menerangkan bahwa:",
+            pernyataan: "Berdasarkan kriteria kelulusan peserta didik yang ditetapkan oleh satuan pendidikan and rapat dewan guru, dengan mengacu pada peraturan perundang-undangan yang berlaku, yang bersangkutan dinyatakan:",
+            penutup: "Demikianlah Surat keterangan ini dibuat, untuk dapat dipergunakan sebagaimana mestinya."
         };
 
-        let mapelList = [];
-        let siswaList = [];
+        let kopMetadata = { ...defaultKop };
+        let sklMetadata = { ...defaultSkl };
 
-        // URL Default dari pengguna
-        const DEFAULT_GSCRIPT_URL = "https://script.google.com/macros/s/AKfycbyo-bScki2t71dxPbRtadAEN27yBxcu0xrqxTKVoIsYyhcPmRUrcWVVjGPpNRMnJ06v/exec";
+        let mapelList = [
+            { id: "MP-101", nama: "Pendidikan Agama dan Budi Pekerti", kategori: "Wajib" },
+            { id: "MP-102", nama: "Pendidikan Pancasila dan Kewarganegaraan", kategori: "Wajib" },
+            { id: "MP-103", nama: "Bahasa Indonesia", kategori: "Wajib" },
+            { id: "MP-104", nama: "Matematika", kategori: "Wajib" },
+            { id: "MP-105", nama: "Ilmu Pengetahuan Alam dan Sosial (IPAS)", kategori: "Wajib" },
+            { id: "MP-106", nama: "Seni dan Budaya", kategori: "Wajib" },
+            { id: "MP-107", nama: "Pendidikan Jasmani, Olahraga, dan Kesehatan", kategori: "Wajib" },
+            { id: "MP-108", nama: "Bahasa Inggris", kategori: "Wajib" },
+            { id: "MP-109", nama: "BAM (Budaya Alam Minangkabau)", kategori: "Muatan Lokal" }
+        ];
+        
+        let siswaList = [];
+        let arsipList = []; 
+        let selectedArsipId = null; 
+
+        // URL Default Baru dari pengguna yang disematkan langsung
+        const DEFAULT_GSCRIPT_URL = "https://script.google.com/macros/s/AKfycbwB8Pt8eTApC_CRVn2o4NyZOGzYBCrMNcR7RrK0veTcoyC5J1umEqgSZCZ8vnRx4TyXlg/exec";
 
         // Fallback Logo Functions
         function useFallbackLogoKiri(img) {
@@ -964,6 +1129,54 @@
             return num.toFixed(2).replace('.', ',');
         }
 
+        // NORMALISASI ID AMAN (Mencegah precision loss dan notasi ilmiah)
+        function normalizeId(id) {
+            if (id === undefined || id === null) return '';
+            let str = String(id).trim();
+            if (str.toLowerCase().includes('e') || str.includes('.')) {
+                let num = Number(str);
+                if (!isNaN(num)) {
+                    return String(Math.round(num));
+                }
+            }
+            return str;
+        }
+
+        // MENCARI SISWA SECARA TANGGUH & MENYELURUH (Penyelesaian Bug ID Tertukar)
+        function findStudentById(id) {
+            if (id === undefined || id === null || id === '') return null;
+            const targetNorm = normalizeId(id);
+            return siswaList.find(s => normalizeId(s.id) === targetNorm);
+        }
+
+        // MENCARI MATA PELAJARAN SECARA TANGGUH
+        function findMapelById(id) {
+            if (id === undefined || id === null || id === '') return null;
+            const targetNorm = normalizeId(id);
+            return mapelList.find(m => normalizeId(m.id) === targetNorm);
+        }
+
+        // AMBIL NILAI SISWA SECARA TANGGUH (Mencegah Mismatch ID Google Sheets)
+        function getStudentGrade(student, mapelId) {
+            if (!student || !student.nilai) return '';
+            const safeKey = String(mapelId).trim();
+            const normKey = normalizeId(mapelId);
+            
+            if (student.nilai[safeKey] !== undefined) {
+                return student.nilai[safeKey];
+            }
+            if (student.nilai[normKey] !== undefined) {
+                return student.nilai[normKey];
+            }
+            // Cari key yang dinormalisasi di dalam student.nilai
+            for (let key in student.nilai) {
+                if (normalizeId(key) === normKey) {
+                    return student.nilai[key];
+                }
+            }
+            return '';
+        }
+
         // ONLOAD INITIALIZATION
         window.onload = function() {
             checkAuthStatus();
@@ -983,7 +1196,7 @@
                     icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 14h4v4m0-4l-5 5m11-5h4v4m0-4l5 5M4 10h4V6m0 4L3 3m11 3v4h4m-4 0l-5-5"/>`;
                 } else {
                     text.textContent = 'Layar Penuh';
-                    icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5"/>`;
+                    icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l-5-5m11 5v-4m0 4h-4m4 0l-5-5"/>`;
                 }
             });
         };
@@ -993,16 +1206,36 @@
             const savedSkl = localStorage.getItem('sklMetadata');
             const savedMapel = localStorage.getItem('mapelList');
             const savedSiswa = localStorage.getItem('siswaList');
+            const savedArsip = localStorage.getItem('arsipList');
 
-            if (savedKop) {
-                kopMetadata = JSON.parse(savedKop);
-            } else {
-                localStorage.setItem('kopMetadata', JSON.stringify(kopMetadata));
-            }
-            
-            if (savedSkl) sklMetadata = JSON.parse(savedSkl);
-            if (savedMapel) mapelList = JSON.parse(savedMapel);
-            if (savedSiswa) siswaList = JSON.parse(savedSiswa);
+            try {
+                if (savedKop) kopMetadata = JSON.parse(savedKop);
+            } catch(e) { console.error("KOP parse error", e); }
+
+            try {
+                if (savedSkl) sklMetadata = JSON.parse(savedSkl);
+            } catch(e) { console.error("SKL parse error", e); }
+
+            try {
+                if (savedMapel) {
+                    const parsed = JSON.parse(savedMapel);
+                    if (Array.isArray(parsed)) mapelList = parsed;
+                }
+            } catch(e) { console.error("Mapel parse error", e); }
+
+            try {
+                if (savedSiswa) {
+                    const parsed = JSON.parse(savedSiswa);
+                    if (Array.isArray(parsed)) siswaList = parsed;
+                }
+            } catch(e) { console.error("Siswa parse error", e); }
+
+            try {
+                if (savedArsip) {
+                    const parsed = JSON.parse(savedArsip);
+                    if (Array.isArray(parsed)) arsipList = parsed;
+                }
+            } catch(e) { console.error("Arsip parse error", e); }
         }
 
         function insertFormat(tag) {
@@ -1046,7 +1279,7 @@
             document.getElementById('skl-kepsek').value = sklMetadata.kepsek || "";
             document.getElementById('skl-nip').value = sklMetadata.nip || "";
             document.getElementById('skl-pengantar').value = sklMetadata.pengantar || "Yang bertanda tangan di bawah ini, Kepala UPT SDN 22 TANAH KERAS menerangkan bahwa:";
-            document.getElementById('skl-pernyataan').value = sklMetadata.pernyataan || "Berdasarkan kriteria kelulusan peserta didik yang ditetapkan oleh satuan pendidikan dan rapat dewan guru, dengan mengacu pada peraturan perundang-undangan yang berlaku, yang bersangkutan dinyatakan:";
+            document.getElementById('skl-pernyataan').value = sklMetadata.pernyataan || "Berdasarkan kriteria kelulusan peserta didik yang ditetapkan oleh satuan pendidikan and rapat dewan guru, dengan mengacu pada peraturan perundang-undangan yang berlaku, yang bersangkutan dinyatakan:";
             document.getElementById('skl-penutup').value = sklMetadata.penutup || "Demikianlah Surat keterangan ini dibuat, untuk dapat dipergunakan sebagaimana mestinya.";
 
             document.getElementById('kop-logo-kiri').value = kopMetadata.logoKiri || "";
@@ -1059,8 +1292,8 @@
             document.getElementById('kop-email').value = kopMetadata.email || "UPTsdn22tanahkeras@gmail.com";
             document.getElementById('kop-website').value = kopMetadata.website || "www.sdn22tk.my.id";
 
-            const scriptUrl = localStorage.getItem('gscript_web_app_url') || DEFAULT_GSCRIPT_URL;
-            document.getElementById('gscript-url-input').value = scriptUrl;
+            const scriptUrl = localStorage.getItem('gscript_web_app_url');
+            document.getElementById('gscript-url-input').value = scriptUrl ? scriptUrl : "";
         }
 
         // TABS NAVIGATION CONTROLLER
@@ -1089,6 +1322,9 @@
             } else if (tabId === 'input-nilai') {
                 populateNilaiSiswaDropdown();
                 loadStudentGradesForm();
+            } else if (tabId === 'arsip-data') {
+                populateTahunArsipDropdown();
+                renderArsipTable();
             }
 
             const sidebar = document.getElementById('sidebar');
@@ -1106,6 +1342,7 @@
             renderDashboardStats();
             renderSiswaTable();
             renderMapelTable();
+            renderArsipTable();
         }
 
         function renderDashboardStats() {
@@ -1115,7 +1352,6 @@
             document.getElementById('stat-mapel-wajib').textContent = wajibCount;
             document.getElementById('stat-mapel-mulok').textContent = mulokCount;
             
-            // Update button label
             const btnCetakSemua = document.getElementById('btn-cetak-semua');
             if (btnCetakSemua) {
                 btnCetakSemua.textContent = `Cetak Semua Siswa (${siswaList.length})`;
@@ -1124,9 +1360,12 @@
 
         function autoConnectGoogleSheetsOnLoad() {
             let url = localStorage.getItem('gscript_web_app_url');
-            if (!url) {
+            const isFirstLoad = localStorage.getItem('first_load_done') !== 'true';
+            
+            if (isFirstLoad && !url) {
                 url = DEFAULT_GSCRIPT_URL;
                 localStorage.setItem('gscript_web_app_url', url);
+                localStorage.setItem('first_load_done', 'true');
             }
             
             if (url) {
@@ -1137,17 +1376,23 @@
                         if (data) {
                             kopMetadata = data.kopMetadata || kopMetadata;
                             sklMetadata = data.sklMetadata || sklMetadata;
-                            mapelList = data.mapelList || mapelList;
+                            
+                            if (data.mapelList && data.mapelList.length > 0) {
+                                mapelList = data.mapelList;
+                            }
+                            
                             siswaList = data.siswaList || siswaList;
+                            arsipList = data.arsipList || arsipList;
                             
                             localStorage.setItem('kopMetadata', JSON.stringify(kopMetadata));
                             localStorage.setItem('sklMetadata', JSON.stringify(sklMetadata));
                             localStorage.setItem('mapelList', JSON.stringify(mapelList));
                             localStorage.setItem('siswaList', JSON.stringify(siswaList));
+                            localStorage.setItem('arsipList', JSON.stringify(arsipList));
 
                             initForms();
                             renderAll();
-                            updateCloudStatus("Tersambung", "emerald");
+                            updateCloudStatus("Tersambung (Cloud)", "emerald");
                             document.getElementById('cloud-sync-status-details').classList.remove('hidden');
                         }
                     })
@@ -1155,46 +1400,111 @@
                         console.error("Gagal sinkronisasi otomatis Google Sheet: ", err);
                         updateCloudStatus("Gagal Sinkronisasi", "rose");
                     });
+            } else {
+                updateCloudStatus("Lokal (Offline)", "rose");
             }
         }
 
-        function connectGoogleSheets() {
+        // HUBUNGKAN DATABASE
+        function connectCloudDatabase() {
             const urlInput = document.getElementById('gscript-url-input').value.trim();
             if (!urlInput) {
-                showNotification('Harap masukkan URL Web App Google Apps Script Anda!');
+                showNotification('Harap masukkan URL Web App Google Apps Script!');
                 return;
             }
 
             updateCloudStatus("Menghubungkan...", "amber");
-            showNotification("Sedang Tarik Data");
+            showNotification("Menghubungkan ke database cloud...");
 
             fetch(urlInput)
                 .then(response => response.json())
                 .then(data => {
                     localStorage.setItem('gscript_web_app_url', urlInput);
-                    
+                    localStorage.setItem('first_load_done', 'true');
+
                     if (data) {
                         kopMetadata = data.kopMetadata || kopMetadata;
                         sklMetadata = data.sklMetadata || sklMetadata;
-                        mapelList = data.mapelList || mapelList;
+                        
+                        if (data.mapelList && data.mapelList.length > 0) {
+                            mapelList = data.mapelList;
+                        }
+                        
                         siswaList = data.siswaList || siswaList;
+                        arsipList = data.arsipList || arsipList;
 
                         localStorage.setItem('kopMetadata', JSON.stringify(kopMetadata));
                         localStorage.setItem('sklMetadata', JSON.stringify(sklMetadata));
                         localStorage.setItem('mapelList', JSON.stringify(mapelList));
                         localStorage.setItem('siswaList', JSON.stringify(siswaList));
+                        localStorage.setItem('arsipList', JSON.stringify(arsipList));
 
                         initForms();
                         renderAll();
                         updateCloudStatus("Tersambung (Cloud)", "emerald");
                         document.getElementById('cloud-sync-status-details').classList.remove('hidden');
-                        showNotification("Tarik Data Berhasil.");
+                        showNotification("Koneksi Sukses! Seluruh data disinkronkan.");
                     }
                 })
                 .catch(err => {
                     console.error(err);
-                    updateCloudStatus("Lokal (Gagal Hubung)", "rose");
-                    showNotification("Gagal terhubung ke URL Google Sheet. Periksa kembali Web App Anda.");
+                    updateCloudStatus("Gagal Hubung", "rose");
+                    showNotification("Gagal menghubungi URL Apps Script. Periksa kembali URL Anda.");
+                });
+        }
+
+        // PUTUSKAN SAMBUNGAN DATABASE
+        function disconnectCloudDatabase() {
+            localStorage.removeItem('gscript_web_app_url');
+            localStorage.setItem('first_load_done', 'true');
+            document.getElementById('gscript-url-input').value = "";
+            
+            updateCloudStatus("Lokal (Offline)", "rose");
+            document.getElementById('cloud-sync-status-details').classList.add('hidden');
+            showNotification("Koneksi terputus! Aplikasi kini berjalan dalam mode Lokal (Offline).");
+        }
+
+        // TARIK DATA CLOUD MANUAL
+        function pullCloudDatabase() {
+            const url = localStorage.getItem('gscript_web_app_url');
+            if (!url) {
+                showNotification('Aplikasi belum terhubung! Silakan klik tombol "Hubungkan" terlebih dahulu.');
+                return;
+            }
+
+            updateCloudStatus("Menarik Data...", "amber");
+            showNotification("Sedang menarik data terbaru dari Google Sheets...");
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data) {
+                        kopMetadata = data.kopMetadata || kopMetadata;
+                        sklMetadata = data.sklMetadata || sklMetadata;
+                        
+                        if (data.mapelList && data.mapelList.length > 0) {
+                            mapelList = data.mapelList;
+                        }
+                        
+                        siswaList = data.siswaList || siswaList;
+                        arsipList = data.arsipList || arsipList;
+
+                        localStorage.setItem('kopMetadata', JSON.stringify(kopMetadata));
+                        localStorage.setItem('sklMetadata', JSON.stringify(sklMetadata));
+                        localStorage.setItem('mapelList', JSON.stringify(mapelList));
+                        localStorage.setItem('siswaList', JSON.stringify(siswaList));
+                        localStorage.setItem('arsipList', JSON.stringify(arsipList));
+
+                        initForms();
+                        renderAll();
+                        updateCloudStatus("Tersambung (Cloud)", "emerald");
+                        showNotification("Sukses! Data terbaru berhasil ditarik.");
+                    }
+                })
+                .catch(err => {
+                    console.error(err);
+                    updateCloudStatus("Gagal Tarik", "rose");
+                    showNotification("Gagal mengambil data dari Google Sheets. Periksa koneksi internet Anda.");
                 });
         }
 
@@ -1229,7 +1539,8 @@
                 kopMetadata: kopMetadata,
                 sklMetadata: sklMetadata,
                 mapelList: mapelList,
-                siswaList: siswaList
+                siswaList: siswaList,
+                arsipList: arsipList
             };
 
             fetch(url, {
@@ -1247,6 +1558,267 @@
                 console.error("Gagal mengirim data ke Google Sheets: ", err);
                 updateCloudStatus("Gagal Mengirim", "rose");
             });
+        }
+
+        // KUSTOM CONFIRM MODAL CONTROLLER
+        function showConfirmModal(title, message, onConfirm, onCancel = null) {
+            const modal = document.getElementById('modal-confirm');
+            const modalTitle = document.getElementById('confirm-modal-title');
+            const modalMessage = document.getElementById('confirm-modal-message');
+            const btnOk = document.getElementById('btn-confirm-ok');
+            const btnCancel = document.getElementById('btn-confirm-cancel');
+
+            modalTitle.textContent = title;
+            modalMessage.textContent = message;
+
+            modal.classList.remove('hidden');
+
+            const clearListeners = () => {
+                const newBtnOk = btnOk.cloneNode(true);
+                const newBtnCancel = btnCancel.cloneNode(true);
+                btnOk.parentNode.replaceChild(newBtnOk, btnOk);
+                btnCancel.parentNode.replaceChild(newBtnCancel, btnCancel);
+            };
+
+            document.getElementById('btn-confirm-ok').addEventListener('click', () => {
+                modal.classList.add('hidden');
+                clearListeners();
+                if (onConfirm) onConfirm();
+            });
+
+            document.getElementById('btn-confirm-cancel').addEventListener('click', () => {
+                modal.classList.add('hidden');
+                clearListeners();
+                if (onCancel) onCancel();
+            });
+        }
+
+        // LOGIKA PENGARSIPAN DATA AKTIF
+        function triggerArchiveCurrentYear() {
+            const currentYear = sklMetadata.tahunPelajaran ? sklMetadata.tahunPelajaran.trim() : "";
+            
+            if (!currentYear) {
+                showNotification("Tahun Pelajaran belum diisi pada Data SKL!");
+                return;
+            }
+
+            if (siswaList.length === 0) {
+                showNotification("Tidak ada data siswa untuk diarsipkan!");
+                return;
+            }
+
+            const existingIndex = arsipList.findIndex(a => a.tahunPelajaran === currentYear);
+
+            let msg = `Apakah Anda yakin ingin mengarsipkan seluruh data kelulusan Tahun Pelajaran ${currentYear}?`;
+            if (existingIndex > -1) {
+                msg = `Arsip untuk Tahun Pelajaran ${currentYear} sudah ada. Apakah Anda ingin memperbarui arsip tersebut dengan data baru saat ini?`;
+            }
+
+            showConfirmModal(
+                "Arsipkan Data Pelajaran",
+                msg,
+                () => {
+                    executeArchiving(currentYear, existingIndex);
+                }
+            );
+        }
+
+        function executeArchiving(tahun, existingIndex) {
+            const archivePayload = {
+                id: existingIndex > -1 ? arsipList[existingIndex].id : "ARS-" + Date.now() + "-" + Math.floor(Math.random() * 1000),
+                tahunPelajaran: tahun,
+                tanggalArsip: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' }) + " WIB",
+                textJumlahSiswa: siswaList.length,
+                snapshot: {
+                    kopMetadata: JSON.parse(JSON.stringify(kopMetadata)),
+                    sklMetadata: JSON.parse(JSON.stringify(sklMetadata)),
+                    mapelList: JSON.parse(JSON.stringify(mapelList)),
+                    siswaList: JSON.parse(JSON.stringify(siswaList))
+                }
+            };
+
+            if (existingIndex > -1) {
+                arsipList[existingIndex] = archivePayload;
+            } else {
+                arsipList.push(archivePayload);
+            }
+
+            localStorage.setItem('arsipList', JSON.stringify(arsipList));
+            dispatchCloudPush(); 
+            showNotification(`Data kelulusan Tahun Pelajaran ${tahun} sukses diarsipkan!`);
+
+            setTimeout(() => {
+                showConfirmModal(
+                    "Mulai Baru (Reset Data)",
+                    "Data berhasil disimpan di arsip. Apakah Anda ingin mengosongkan data siswa aktif saat ini agar dapat menginput data siswa baru di tahun pelajaran berikutnya?",
+                    () => {
+                        siswaList = [];
+                        localStorage.setItem('siswaList', JSON.stringify(siswaList));
+                        renderSiswaTable();
+                        renderDashboardStats();
+                        showNotification("Data siswa aktif telah dikosongkan. Sistem siap digunakan untuk tahun ajaran baru!");
+                        dispatchCloudPush();
+                    }
+                );
+            }, 1000);
+        }
+
+        // FILTER TAHUN PELAJARAN ARSIP
+        function populateTahunArsipDropdown() {
+            const select = document.getElementById('filter-tahun-arsip');
+            if (!select) return;
+            select.innerHTML = '<option value="Semua">-- Semua Tahun Pelajaran --</option>';
+
+            const uniqueYears = [...new Set(arsipList.map(a => a.tahunPelajaran))];
+            uniqueYears.forEach(year => {
+                const opt = document.createElement('option');
+                opt.value = year;
+                opt.textContent = year;
+                select.appendChild(opt);
+            });
+        }
+
+        function renderArsipTable() {
+            const tbody = document.getElementById('arsip-table-body');
+            const emptyState = document.getElementById('arsip-empty-state');
+            const filterValue = document.getElementById('filter-tahun-arsip')?.value || "Semua";
+            
+            if (!tbody) return;
+            tbody.innerHTML = '';
+
+            const filteredArsip = arsipList.filter(a => filterValue === "Semua" || a.tahunPelajaran === filterValue);
+
+            if (filteredArsip.length === 0) {
+                emptyState.classList.remove('hidden');
+                return;
+            } else {
+                emptyState.classList.add('hidden');
+            }
+
+            filteredArsip.forEach(a => {
+                const tr = document.createElement('tr');
+                tr.className = 'border-b border-slate-200 hover:bg-slate-50 transition-all';
+                tr.innerHTML = `
+                    <td class="py-4 px-6">
+                        <div class="font-extrabold text-slate-900 text-base">${a.tahunPelajaran}</div>
+                    </td>
+                    <td class="py-4 px-6 text-slate-500 font-medium">${a.tanggalArsip}</td>
+                    <td class="py-4 px-6 text-center font-bold text-slate-800">${a.jumlahSiswa || (a.snapshot ? a.snapshot.siswaList.length : 0)} Siswa</td>
+                    <td class="py-4 px-6 text-right space-x-2">
+                        <button onclick="viewArsipDetail('${normalizeId(a.id)}')" class="bg-indigo-50 hover:bg-indigo-600 text-indigo-600 hover:text-white px-3 py-1.5 rounded-lg text-xs font-bold transition-all">
+                            Buka Detail Siswa
+                        </button>
+                        <button onclick="deleteArsip('${normalizeId(a.id)}')" class="text-rose-600 hover:text-rose-500 p-2 hover:bg-rose-50 rounded-lg transition-all inline-flex items-center">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function viewArsipDetail(arsipId) {
+            const arsip = arsipList.find(a => normalizeId(a.id) === normalizeId(arsipId));
+            if (!arsip) return;
+
+            selectedArsipId = arsipId;
+            document.getElementById('arsip-detail-title').textContent = arsip.tahunPelajaran;
+            document.getElementById('arsip-detail-container').classList.remove('hidden');
+
+            const siswaTbody = document.getElementById('arsip-siswa-table-body');
+            siswaTbody.innerHTML = '';
+
+            const localSiswa = arsip.snapshot ? arsip.snapshot.siswaList : [];
+            const localMapel = arsip.snapshot ? arsip.snapshot.mapelList : [];
+
+            if (localSiswa.length === 0) {
+                siswaTbody.innerHTML = `<tr><td colspan="5" class="py-4 text-center text-slate-400 italic">Arsip ini kosong atau tidak memiliki data siswa.</td></tr>`;
+                return;
+            }
+
+            localSiswa.forEach(s => {
+                const tr = document.createElement('tr');
+                tr.className = 'hover:bg-slate-50 border-b border-slate-100';
+                
+                const bDate = s.tglLahir ? new Date(s.tglLahir) : null;
+                const formatBDate = bDate && !isNaN(bDate.getTime()) ? bDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '-';
+
+                let total = 0;
+                let count = 0;
+                localMapel.forEach(m => {
+                    const grade = getStudentGrade(s, m.id);
+                    if (grade !== undefined && grade !== '') {
+                        total += parseFloat(grade);
+                        count++;
+                    }
+                });
+                const rRata = count > 0 ? (total / count).toFixed(2).replace('.', ',') : '-';
+
+                tr.innerHTML = `
+                    <td class="py-3 px-2 font-bold text-slate-900">${s.nama}</td>
+                    <td class="py-3 px-2 font-mono">${s.nisn}</td>
+                    <td class="py-3 px-2 text-slate-500">${s.tempatLahir}, ${formatBDate}</td>
+                    <td class="py-3 px-2 text-center font-extrabold text-blue-600">${rRata}</td>
+                    <td class="py-3 px-2 text-right">
+                        <button onclick="printArsipSkl('${normalizeId(arsipId)}', '${normalizeId(s.id)}')" class="bg-[#27F5E4] hover:bg-[#1bc4b5] text-slate-950 px-2.5 py-1 rounded-md text-[10px] font-black uppercase transition-all shadow-sm">
+                            Cetak SKL Arsip
+                        </button>
+                    </td>
+                `;
+                siswaTbody.appendChild(tr);
+            });
+            
+            document.getElementById('arsip-detail-container').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function closeArsipDetail() {
+            document.getElementById('arsip-detail-container').classList.add('hidden');
+            selectedArsipId = null;
+        }
+
+        function deleteArsip(arsipId) {
+            const index = arsipList.findIndex(a => normalizeId(a.id) === normalizeId(arsipId));
+            if (index > -1) {
+                const tahun = arsipList[index].tahunPelajaran;
+                showConfirmModal(
+                    "Hapus Arsip Data",
+                    `Apakah Anda benar-benar yakin ingin menghapus seluruh rekaman arsip Tahun Pelajaran ${tahun}? Tindakan ini bersifat permanen!`,
+                    () => {
+                        arsipList.splice(index, 1);
+                        localStorage.setItem('arsipList', JSON.stringify(arsipList));
+                        renderArsipTable();
+                        populateTahunArsipDropdown();
+                        closeArsipDetail();
+                        dispatchCloudPush();
+                        showNotification(`Arsip kelulusan ${tahun} berhasil dihapus.`);
+                    }
+                );
+            }
+        }
+
+        // FUNGSI PRINT ARSIP DENGAN METADATA KHUSUS TAHUN BERSANGKUTAN
+        function printArsipSkl(arsipId, siswaId) {
+            const arsip = arsipList.find(a => normalizeId(a.id) === normalizeId(arsipId));
+            if (!arsip || !arsip.snapshot) return;
+
+            const student = arsip.snapshot.siswaList.find(s => normalizeId(s.id) === normalizeId(siswaId));
+            if (!student) return;
+
+            const printArea = document.getElementById('print-area');
+            const originalContent = printArea.innerHTML;
+
+            printArea.innerHTML = generateSklHtml(
+                student, 
+                false, 
+                arsip.snapshot.kopMetadata, 
+                arsip.snapshot.sklMetadata, 
+                arsip.snapshot.mapelList
+            );
+
+            window.print();
+
+            printArea.innerHTML = originalContent;
+            showNotification(`SKL Arsip ${student.nama} (${arsip.tahunPelajaran}) sukses diprint.`);
         }
 
         function saveKopMetadata() {
@@ -1304,7 +1876,7 @@
                 return;
             }
 
-            const id = Date.now();
+            const id = "MAPEL-" + Date.now() + "-" + Math.floor(Math.random() * 1000);
             mapelList.push({ id, nama: text, kategori });
 
             localStorage.setItem('mapelList', JSON.stringify(mapelList));
@@ -1315,17 +1887,45 @@
             dispatchCloudPush();
         }
 
+        // FUNGSI INLINE INPUT MAPEL BARU (MENJAMIN FORM TIDAK HILANG)
+        function saveMapelDataInline() {
+            const input = document.getElementById('inline-mapel-nama');
+            const select = document.getElementById('inline-mapel-kategori');
+            if (!input || !select) return;
+
+            const text = input.value.trim();
+            const kategori = select.value;
+
+            if (!text) {
+                showNotification('Nama mata pelajaran wajib diisi!');
+                return;
+            }
+
+            const id = "MAPEL-" + Date.now() + "-" + Math.floor(Math.random() * 1000);
+            mapelList.push({ id, nama: text, kategori });
+
+            localStorage.setItem('mapelList', JSON.stringify(mapelList));
+            input.value = ''; 
+            renderMapelTable();
+            renderDashboardStats();
+            showNotification(`Mata Pelajaran "${text}" berhasil disimpan!`);
+            dispatchCloudPush();
+        }
+
         function deleteMapel(id) {
-            const index = mapelList.findIndex(m => m.id === id);
-            if (index > -1) {
-                const nama = mapelList[index].nama;
-                mapelList.splice(index, 1);
-                
-                localStorage.setItem('mapelList', JSON.stringify(mapelList));
-                renderMapelTable();
-                renderDashboardStats();
-                showNotification(`Mata Pelajaran "${nama}" berhasil dihapus.`);
-                dispatchCloudPush();
+            const target = findMapelById(id);
+            if (target) {
+                const index = mapelList.indexOf(target);
+                if (index > -1) {
+                    const nama = mapelList[index].nama;
+                    mapelList.splice(index, 1);
+                    
+                    localStorage.setItem('mapelList', JSON.stringify(mapelList));
+                    renderMapelTable();
+                    renderDashboardStats();
+                    showNotification(`Mata Pelajaran "${nama}" berhasil dihapus.`);
+                    dispatchCloudPush();
+                }
             }
         }
 
@@ -1333,19 +1933,23 @@
             const wajibBody = document.getElementById('mapel-wajib-body');
             const mulokBody = document.getElementById('mapel-mulok-body');
             
+            if (!wajibBody || !mulokBody) return;
+            
             wajibBody.innerHTML = '';
             mulokBody.innerHTML = '';
 
             let wajibCount = 0;
             let mulokCount = 0;
 
-            mapelList.forEach(m => {
+            const safeMapelList = Array.isArray(mapelList) ? mapelList : [];
+
+            safeMapelList.forEach(m => {
                 const tr = document.createElement('tr');
                 tr.className = 'border-b border-slate-100 hover:bg-slate-50';
                 tr.innerHTML = `
                     <td class="py-3 font-semibold text-slate-900">${m.nama}</td>
                     <td class="py-3 text-right">
-                        <button onclick="deleteMapel(${m.id})" class="text-rose-600 hover:text-rose-500 p-1.5 hover:bg-rose-50 rounded-lg transition-all" title="Hapus Mapel">
+                        <button onclick="deleteMapel('${normalizeId(m.id)}')" class="text-rose-600 hover:text-rose-500 p-1.5 hover:bg-rose-50 rounded-lg transition-all" title="Hapus Mapel">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
                         </button>
                     </td>
@@ -1387,10 +1991,10 @@
                 return;
             }
 
-            const id = Date.now();
+            const id = "SISWA-" + Date.now() + "-" + Math.floor(Math.random() * 1000);
             const initialNilai = {};
             mapelList.forEach(m => {
-                initialNilai[m.id] = 0.00;
+                initialNilai[m.id] = ""; 
             });
 
             siswaList.push({
@@ -1411,22 +2015,26 @@
         }
 
         function deleteSiswa(id) {
-            const index = siswaList.findIndex(s => s.id === id);
-            if (index > -1) {
-                const nama = siswaList[index].nama;
-                siswaList.splice(index, 1);
-                
-                localStorage.setItem('siswaList', JSON.stringify(siswaList));
-                renderSiswaTable();
-                renderDashboardStats();
-                showNotification(`Data Siswa "${nama}" berhasil dihapus.`);
-                dispatchCloudPush();
+            const target = findStudentById(id);
+            if (target) {
+                const index = siswaList.indexOf(target);
+                if (index > -1) {
+                    const nama = siswaList[index].nama;
+                    siswaList.splice(index, 1);
+                    
+                    localStorage.setItem('siswaList', JSON.stringify(siswaList));
+                    renderSiswaTable();
+                    renderDashboardStats();
+                    showNotification(`Data Siswa "${nama}" berhasil dihapus.`);
+                    dispatchCloudPush();
+                }
             }
         }
 
         function renderSiswaTable() {
             const tbody = document.getElementById('siswa-table-body');
             const emptyState = document.getElementById('siswa-empty-state');
+            if (!tbody) return;
             tbody.innerHTML = '';
 
             if (siswaList.length === 0) {
@@ -1440,16 +2048,21 @@
                 const tr = document.createElement('tr');
                 tr.className = 'border-b border-slate-200 hover:bg-slate-50 transition-all';
                 
-                const bDate = new Date(s.tglLahir);
-                const formatBDate = bDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+                const bDate = s.tglLahir ? new Date(s.tglLahir) : null;
+                const formatBDate = bDate && !isNaN(bDate.getTime()) ? bDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '-';
 
                 const totalMapels = mapelList.length;
-                const filledNilai = Object.keys(s.nilai).filter(key => mapelList.some(m => m.id == key)).length;
+                const filledNilai = Object.keys(s.nilai || {}).filter(key => {
+                    const val = s.nilai[key];
+                    return mapelList.some(m => normalizeId(m.id) === normalizeId(key)) && val !== undefined && val !== null && val !== '';
+                }).length;
+
+                const safeIdStr = normalizeId(s.id);
 
                 tr.innerHTML = `
                     <td class="py-4 px-6">
                         <div class="font-extrabold text-slate-900 text-base">${s.nama}</div>
-                        <div class="text-xs text-[#1bc4b5] mt-0.5 font-bold">Siswa UPT SDN 22 Tanah Keras</div>
+                        <div class="text-xs text-[#1bc4b5] mt-0.5 font-bold">Siswa UPT SDN 22</div>
                     </td>
                     <td class="py-4 px-6 font-mono text-xs text-slate-700">
                         <span>${s.nisn}</span>
@@ -1463,13 +2076,13 @@
                         </span>
                     </td>
                     <td class="py-4 px-6 text-right space-x-2">
-                        <button onclick="pilihInputNilaiLangsung(${s.id})" class="bg-[#27F5E4]/10 hover:bg-[#27F5E4] text-[#17a094] hover:text-slate-950 px-3 py-1.5 rounded-lg text-xs font-bold transition-all inline-flex items-center gap-1" title="Input Nilai">
+                        <button onclick="pilihInputNilaiLangsung('${safeIdStr}')" class="bg-[#27F5E4]/10 hover:bg-[#27F5E4] text-[#17a094] hover:text-slate-950 px-3 py-1.5 rounded-lg text-xs font-bold transition-all inline-flex items-center gap-1" title="Input Nilai">
                             Nilai
                         </button>
-                        <button onclick="pilihCetakLangsung(${s.id})" class="bg-slate-100 hover:bg-[#27F5E4] text-slate-700 hover:text-slate-950 px-3 py-1.5 rounded-lg text-xs font-bold transition-all inline-flex items-center gap-1">
+                        <button onclick="pilihCetakLangsung('${safeIdStr}')" class="bg-slate-100 hover:bg-[#27F5E4] text-slate-700 hover:text-slate-950 px-3 py-1.5 rounded-lg text-xs font-bold transition-all inline-flex items-center gap-1">
                             Cetak
                         </button>
-                        <button onclick="deleteSiswa(${s.id})" class="text-rose-600 hover:text-rose-500 p-2 hover:bg-rose-50 rounded-lg transition-all inline-flex items-center justify-center">
+                        <button onclick="deleteSiswa('${safeIdStr}')" class="text-rose-600 hover:text-rose-500 p-2 hover:bg-rose-50 rounded-lg transition-all inline-flex items-center justify-center">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
                         </button>
                     </td>
@@ -1501,54 +2114,88 @@
 
             siswaList.forEach(s => {
                 const opt = document.createElement('option');
-                opt.value = String(s.id); // Pastikan value bertipe string murni
+                opt.value = normalizeId(s.id); 
                 opt.textContent = `${s.nama} (${s.nisn})`;
                 select.appendChild(opt);
             });
 
-            // Terapkan penundaan ID siswa jika dipicu dari klik tombol 'Nilai' di tabel
             if (window.pendingSiswaId) {
-                select.value = String(window.pendingSiswaId);
+                select.value = normalizeId(window.pendingSiswaId);
                 delete window.pendingSiswaId;
+            } else if (siswaList.length > 0 && !select.value) {
+                select.value = normalizeId(siswaList[0].id);
             }
         }
 
+        // MEMPERBAIKI KETIDAKSESUAIAN FORM & DATA NILAI
         function loadStudentGradesForm() {
             const select = document.getElementById('select-nilai-siswa');
             if (!select) return;
             
-            const studentId = select.value;
-            const student = siswaList.find(s => String(s.id) === String(studentId));
-            const header = document.getElementById('nama-siswa-nilai-header');
+            let studentId = select.value;
+            let student = findStudentById(studentId);
             
-            if (!student) {
-                if (header) header.textContent = '-';
-                return;
-            }
-
-            // Memperbarui nama siswa secara dinamis di header jika elemennya ada
-            if (header) {
-                header.textContent = student.nama;
-            }
-
             const container = document.getElementById('dynamic-grades-inputs');
+            const wrapper = document.getElementById('grades-form-wrapper');
+            const emptyState = document.getElementById('grades-empty-state');
+            
             if (!container) return;
-            container.innerHTML = '';
+            container.innerHTML = ''; 
+
+            if (!student) {
+                // Auto fallback dengan indeks dropdown (mencegah reset dropdown yang tak diizinkan)
+                if (siswaList.length > 0) {
+                    const fallbackIndex = select.selectedIndex;
+                    if (fallbackIndex >= 0 && fallbackIndex < siswaList.length) {
+                        student = siswaList[fallbackIndex];
+                    } else {
+                        student = siswaList[0];
+                    }
+                    select.value = normalizeId(student.id);
+                } else {
+                    if (wrapper) wrapper.classList.add('hidden');
+                    if (emptyState) emptyState.classList.remove('hidden');
+                    return;
+                }
+            }
+
+            if (emptyState) extinction_class = 'hidden'; // helper
+            if (emptyState) emptyState.classList.add('hidden');
+            if (wrapper) wrapper.classList.remove('hidden');
 
             if (mapelList.length === 0) {
-                container.innerHTML = '<div class="col-span-2 text-center text-slate-500 py-4">Belum ada mata pelajaran terdaftar. Silakan tambahkan mata pelajaran terlebih dahulu.</div>';
+                container.innerHTML = `
+                    <div class="col-span-2 text-center text-slate-500 py-6 space-y-3">
+                        <p class="text-sm font-semibold">Belum ada mata pelajaran terdaftar dalam database sekolah.</p>
+                        <button onclick="switchTab('mata-pelajaran')" class="px-4 py-2 bg-[#27F5E4] text-slate-950 rounded-lg text-xs font-bold transition-all">
+                            Buat Mata Pelajaran Sekarang
+                        </button>
+                    </div>
+                `;
                 return;
+            }
+
+            if (document.activeElement && document.activeElement.tagName === 'INPUT') {
+                document.activeElement.blur();
             }
 
             mapelList.forEach(m => {
-                const currentGrade = student.nilai[m.id] !== undefined ? student.nilai[m.id] : '';
+                const score = getStudentGrade(student, m.id); 
+                let currentGrade = '';
+                if (score !== undefined && score !== null && String(score).trim() !== '') {
+                    const parsed = parseFloat(score);
+                    if (!isNaN(parsed)) {
+                        currentGrade = parsed; 
+                    }
+                }
+                
                 const div = document.createElement('div');
                 div.className = 'space-y-1.5';
                 div.innerHTML = `
                     <label class="block text-xs font-semibold text-slate-700 truncate" title="${m.nama}">
                         ${m.nama} <span class="text-slate-400">(${m.kategori})</span>
                     </label>
-                    <input type="number" step="0.01" min="0" max="100" data-mapel-id="${m.id}" value="${currentGrade}" placeholder="Nilai (Contoh: 90,80)" class="w-full input-grade-field bg-white border border-slate-300 rounded-xl px-4 py-3.5 text-sm text-slate-900 focus:outline-none focus:border-[#27F5E4] focus:ring-1 focus:ring-[#27F5E4] transition-all font-semibold">
+                    <input type="number" step="0.01" min="0" max="100" data-mapel-id="${m.id}" value="${currentGrade}" placeholder="Masukkan Nilai (Contoh: 90.80)" class="w-full input-grade-field bg-white border border-slate-300 rounded-xl px-4 py-3.5 text-sm text-slate-900 focus:outline-none focus:border-[#27F5E4] focus:ring-1 focus:ring-[#27F5E4] transition-all font-semibold" autocomplete="off">
                 `;
                 container.appendChild(div);
             });
@@ -1559,23 +2206,36 @@
             if (!select) return;
             
             const studentId = select.value;
-            const student = siswaList.find(s => String(s.id) === String(studentId));
+            let student = findStudentById(studentId);
 
-            if (!student) return;
+            if (!student && select.selectedIndex >= 0 && select.selectedIndex < siswaList.length) {
+                student = siswaList[select.selectedIndex];
+            }
+
+            if (!student) {
+                showNotification('Siswa tidak terdeteksi!');
+                return;
+            }
 
             const inputs = document.querySelectorAll('.input-grade-field');
             let isNilaiValid = true;
 
+            if (!student.nilai) {
+                student.nilai = {};
+            }
+
             inputs.forEach(input => {
                 const mapelId = input.getAttribute('data-mapel-id');
-                const val = parseFloat(input.value);
-                if (input.value !== '') {
+                const rawVal = input.value.trim().replace(',', '.'); 
+                
+                if (rawVal !== '') {
+                    const val = parseFloat(rawVal);
                     if (isNaN(val) || val < 0 || val > 100) {
                         isNilaiValid = false;
                     }
                     student.nilai[mapelId] = val;
                 } else {
-                    student.nilai[mapelId] = 0.00;
+                    student.nilai[mapelId] = ""; 
                 }
             });
 
@@ -1591,13 +2251,13 @@
         }
 
         function pilihInputNilaiLangsung(siswaId) {
-            // Pasang ID target secara global agar dibaca saat dropdown dimuat ulang
-            window.pendingSiswaId = siswaId;
+            window.pendingSiswaId = normalizeId(siswaId);
             switchTab('input-nilai');
         }
 
         function populateCetakSiswaDropdown() {
             const select = document.getElementById('select-cetak-siswa');
+            if (!select) return;
             select.innerHTML = '';
             
             if (siswaList.length === 0) {
@@ -1610,7 +2270,7 @@
 
             siswaList.forEach(s => {
                 const opt = document.createElement('option');
-                opt.value = s.id;
+                opt.value = normalizeId(s.id); 
                 opt.textContent = `${s.nama} (${s.nisn})`;
                 select.appendChild(opt);
             });
@@ -1618,8 +2278,11 @@
 
         function pilihCetakLangsung(siswaId) {
             switchTab('cetak-skl');
-            document.getElementById('select-cetak-siswa').value = siswaId;
-            renderSklPreview();
+            const select = document.getElementById('select-cetak-siswa');
+            if (select) {
+                select.value = normalizeId(siswaId); 
+                renderSklPreview();
+            }
         }
 
         function applyPrintSettings() {
@@ -1648,7 +2311,6 @@
             }
 
             styleEl.innerHTML = `
-                /* Tata Letak Preview di Layar Monitor */
                 #print-area {
                     width: ${width} !important;
                     min-height: ${height} !important;
@@ -1731,28 +2393,34 @@
             return name.toUpperCase();
         }
 
-        function generateSklHtml(student, isMultiPage = false) {
+        // GENERATE SKL HTML (MENDUKUNG OVERRIDE DATA ARSIP)
+        function generateSklHtml(student, isMultiPage = false, altKop = null, altSkl = null, altMapel = null) {
             if (!student) return '';
 
+            const activeKop = altKop || kopMetadata || defaultKop;
+            const activeSkl = altSkl || sklMetadata || defaultSkl;
+            const activeMapel = altMapel || mapelList || [];
+
             // Formatting dates
-            const rawLulusDate = sklMetadata.tglLulus ? new Date(sklMetadata.tglLulus) : null;
-            const formattedLulusDate = rawLulusDate ? rawLulusDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '-';
+            const rawLulusDate = activeSkl.tglLulus ? new Date(activeSkl.tglLulus) : null;
+            const formattedLulusDate = rawLulusDate && !isNaN(rawLulusDate.getTime()) ? rawLulusDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '-';
             
-            const rawDocDate = sklMetadata.tglDokumen ? new Date(sklMetadata.tglDokumen) : null;
-            const formattedDocDate = rawDocDate ? rawDocDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '-';
+            const rawDocDate = activeSkl.tglDokumen ? new Date(activeSkl.tglDokumen) : null;
+            const formattedDocDate = rawDocDate && !isNaN(rawDocDate.getTime()) ? rawDocDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '-';
             
-            const stBDate = new Date(student.tglLahir);
-            const formattedStBDate = stBDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+            const stBDate = student.tglLahir ? new Date(student.tglLahir) : null;
+            const formattedStBDate = stBDate && !isNaN(stBDate.getTime()) ? stBDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '-';
             
-            const formattedKepsek = formatGelarKepsek(sklMetadata.kepsek || "[NAMA KEPALA SEKOLAH]");
+            const formattedKepsek = formatGelarKepsek(activeSkl.kepsek || "[NAMA KEPALA SEKOLAH]");
             
-            // Generate grades tables
             let gradesHtml = '';
             let counter = 1;
             let sumGrades = 0;
             let mapelCount = 0;
 
-            const wajibMapels = mapelList.filter(m => m.kategori === 'Wajib');
+            const safeMapelList = Array.isArray(activeMapel) ? activeMapel : [];
+
+            const wajibMapels = safeMapelList.filter(m => m && m.kategori === 'Wajib');
             if (wajibMapels.length > 0) {
                 gradesHtml += `
                     <tr class="bg-slate-50" style="font-size: 11pt !important;">
@@ -1760,8 +2428,9 @@
                     </tr>
                 `;
                 wajibMapels.forEach(m => {
-                    const score = student.nilai[m.id] !== undefined ? student.nilai[m.id] : '-';
-                    if (score !== '-') {
+                    const score = getStudentGrade(student, m.id); 
+                    const displayScore = score !== '' ? score : '-';
+                    if (score !== '-' && score !== '') {
                         sumGrades += parseFloat(score);
                         mapelCount++;
                     }
@@ -1769,13 +2438,13 @@
                         <tr style="font-size: 11pt !important;">
                             <td class="border border-black px-2 py-1 text-center" style="font-size: 11pt !important;">${counter++}</td>
                             <td class="border border-black px-2 py-1 text-left" style="font-size: 11pt !important;">${m.nama}</td>
-                            <td class="border border-black px-2 py-1 text-center font-bold" style="font-size: 11pt !important;">${formatNilai(score)}</td>
+                            <td class="border border-black px-2 py-1 text-center font-bold" style="font-size: 11pt !important;">${formatNilai(displayScore)}</td>
                         </tr>
                     `;
                 });
             }
 
-            const mulokMapels = mapelList.filter(m => m.kategori === 'Muatan Lokal');
+            const mulokMapels = safeMapelList.filter(m => m && m.kategori === 'Muatan Lokal');
             if (mulokMapels.length > 0) {
                 gradesHtml += `
                     <tr class="bg-slate-50" style="font-size: 11pt !important;">
@@ -1783,8 +2452,9 @@
                     </tr>
                 `;
                 mulokMapels.forEach(m => {
-                    const score = student.nilai[m.id] !== undefined ? student.nilai[m.id] : '-';
-                    if (score !== '-') {
+                    const score = getStudentGrade(student, m.id); 
+                    const displayScore = score !== '' ? score : '-';
+                    if (score !== '-' && score !== '') {
                         sumGrades += parseFloat(score);
                         mapelCount++;
                     }
@@ -1792,7 +2462,7 @@
                         <tr style="font-size: 11pt !important;">
                             <td class="border border-black px-2 py-1 text-center" style="font-size: 11pt !important;">${counter++}</td>
                             <td class="border border-black px-2 py-1 text-left" style="font-size: 11pt !important;">${m.nama}</td>
-                            <td class="border border-black px-2 py-1 text-center font-bold" style="font-size: 11pt !important;">${formatNilai(score)}</td>
+                            <td class="border border-black px-2 py-1 text-center font-bold" style="font-size: 11pt !important;">${formatNilai(displayScore)}</td>
                         </tr>
                     `;
                 });
@@ -1808,9 +2478,8 @@
                 `;
             }
 
-            // Fallback logos
-            const logoKiriUrl = kopMetadata.logoKiri || "https://placehold.co/80x80/008CFF/ffffff?text=KOP";
-            const logoKananUrl = kopMetadata.logoKanan || "https://placehold.co/80x80/27F5E4/0f172a?text=LOGO";
+            const logoKiriUrl = activeKop.logoKiri || "https://placehold.co/80x80/008CFF/ffffff?text=KOP";
+            const logoKananUrl = activeKop.logoKanan || "https://placehold.co/80x80/27F5E4/0f172a?text=LOGO";
 
             const wrapperClass = isMultiPage ? 'print-page' : 'relative z-10';
             const pageWrapperStart = isMultiPage ? `<div class="${wrapperClass}">` : '';
@@ -1826,33 +2495,30 @@
                 ${pageWrapperStart}
                 ${watermarkHtml}
                 <div class="relative z-10" style="font-size: 12pt !important;">
-                    <!-- Kop Surat Resmi (Sangat Rapat & Profesional) -->
                     <div class="border-b-4 border-double border-black pb-3 text-center relative flex justify-between items-center px-12" style="line-height: 1.15 !important;">
                         <div class="w-20 h-20 flex items-center justify-center">
                             <img class="max-w-full max-h-full object-contain" src="${logoKiriUrl}" onerror="useFallbackLogoKiri(this)">
                         </div>
                         <div class="text-center flex-1 mx-4">
-                            <h3 class="font-bold tracking-wider uppercase" style="font-size: 16pt !important; margin: 0 0 1px 0 !important; padding: 0 !important; line-height: 1.15 !important;">${kopMetadata.pemda || "[NAMA PEMERINTAH DAERAH BELUM DIATUR]"}</h3>
-                            <h3 class="font-semibold uppercase" style="font-size: 12pt !important; margin: 0 0 1px 0 !important; padding: 0 !important; line-height: 1.15 !important;">${kopMetadata.dinas || "[NAMA DINAS PENDIDIKAN BELUM DIATUR]"}</h3>
-                            <h2 class="font-black uppercase" style="font-size: 15pt !important; margin: 0 0 1px 0 !important; padding: 0 !important; line-height: 1.15 !important;">${kopMetadata.sekolah || "[NAMA SEKOLAH BELUM DIATUR]"}</h2>
-                            <p class="font-bold uppercase" style="font-size: 11pt !important; margin: 0 0 2px 0 !important; padding: 0 !important; line-height: 1.15 !important;">${kopMetadata.kecamatan || "[KECAMATAN BELUM DIATUR]"}</p>
-                            <p class="italic font-serif" style="font-size: 10pt !important; margin: 0 0 1px 0 !important; padding: 0 !important; line-height: 1.15 !important;">Alamat: ${kopMetadata.alamat || "[ALAMAT BELUM DIATUR]"}</p>
-                            <p class="font-sans text-slate-800" style="font-size: 9pt !important; margin: 0 !important; padding: 0 !important; line-height: 1.15 !important;">Email: ${kopMetadata.email || "-"} | Website: ${kopMetadata.website || "-"}</p>
+                            <h3 class="font-bold tracking-wider uppercase" style="font-size: 16pt !important; margin: 0 0 1px 0 !important; padding: 0 !important; line-height: 1.15 !important;">${activeKop.pemda || "[NAMA PEMERINTAH DAERAH BELUM DIATUR]"}</h3>
+                            <h3 class="font-semibold uppercase" style="font-size: 12pt !important; margin: 0 0 1px 0 !important; padding: 0 !important; line-height: 1.15 !important;">${activeKop.dinas || "[NAMA DINAS PENDIDIKAN BELUM DIATUR]"}</h3>
+                            <h2 class="font-black uppercase" style="font-size: 15pt !important; margin: 0 0 1px 0 !important; padding: 0 !important; line-height: 1.15 !important;">${activeKop.sekolah || "[NAMA SEKOLAH BELUM DIATUR]"}</h2>
+                            <p class="font-bold uppercase" style="font-size: 11pt !important; margin: 0 0 2px 0 !important; padding: 0 !important; line-height: 1.15 !important;">${activeKop.kecamatan || "[KECAMATAN BELUM DIATUR]"}</p>
+                            <p class="italic font-serif" style="font-size: 10pt !important; margin: 0 0 1px 0 !important; padding: 0 !important; line-height: 1.15 !important;">Alamat: ${activeKop.alamat || "[ALAMAT BELUM DIATUR]"}</p>
+                            <p class="font-sans text-slate-800" style="font-size: 9pt !important; margin: !important; padding: 0 !important; line-height: 1.15 !important;">Email: ${activeKop.email || "-"} | Website: ${activeKop.website || "-"}</p>
                         </div>
                         <div class="w-20 h-20 flex items-center justify-center">
                             <img class="max-w-full max-h-full object-contain" src="${logoKananUrl}" onerror="useFallbackLogoKanan(this)">
                         </div>
                     </div>
 
-                    <!-- Judul Surat -->
                     <div class="text-center mt-6">
-                        <h1 class="font-extrabold tracking-wide uppercase underline" style="font-size: 14pt !important;">${sklMetadata.judul || "SURAT KETERANGAN LULUS"}</h1>
-                        <p class="font-medium mt-1" style="font-size: 11pt !important;">Nomor: <span>${sklMetadata.nomor || "[NOMOR BELUM DIATUR]"}</span></p>
+                        <h1 class="font-extrabold tracking-wide uppercase underline" style="font-size: 14pt !important;">${activeSkl.judul || "SURAT KETERANGAN LULUS"}</h1>
+                        <p class="font-medium mt-1" style="font-size: 11pt !important;">Nomor: <span>${activeSkl.nomor || "[NOMOR BELUM DIATUR]"}</span></p>
                     </div>
 
-                    <!-- Isi Surat -->
                     <div class="mt-6 text-justify space-y-4 font-sans px-8" style="font-size: 12pt !important; line-height: 1.6 !important;">
-                        <p style="font-size: 12pt !important;">${sklMetadata.pengantar || "[Silakan isi kalimat pengantar dokumen di halaman format SKL]"}</p>
+                        <p style="font-size: 12pt !important;">${activeSkl.pengantar || "[Silakan isi kalimat pengantar dokumen di halaman format SKL]"}</p>
                         
                         <table class="w-full ml-6 my-3 text-sm" style="font-size: 12pt !important;">
                             <tr class="align-top">
@@ -1878,14 +2544,13 @@
                             <tr class="align-top">
                                 <td class="py-1" style="font-size: 12pt !important;">Kurikulum</td>
                                 <td class="py-1" style="font-size: 12pt !important;">:</td>
-                                <td class="py-1" style="font-size: 12pt !important;">${sklMetadata.kurikulum}</td>
+                                <td class="py-1" style="font-size: 12pt !important;">${activeSkl.kurikulum}</td>
                             </tr>
                         </table>
 
-                        <p style="font-size: 12pt !important;">${sklMetadata.pernyataan || "[Silakan isi kalimat pernyataan kriteria di halaman format SKL]"}</p>
+                        <p style="font-size: 12pt !important;">${activeSkl.pernyataan || "[Silakan isi kalimat pernyataan kriteria di halaman format SKL]"}</p>
                     </div>
 
-                    <!-- Daftar Nilai -->
                     <div class="mt-6 px-8">
                         <table class="w-full border-collapse border border-black text-xs" style="font-size: 12pt !important;">
                             <thead>
@@ -1901,43 +2566,56 @@
                         </table>
                     </div>
 
-                    <!-- Kalimat Penutup -->
                     <div class="mt-5 text-justify px-8 font-sans" style="font-size: 12pt !important; line-height: 1.6 !important;">
-                        <p style="font-size: 12pt !important;">${sklMetadata.penutup || "[Silakan isi kalimat penutup dokumen di halaman format SKL]"}</p>
+                        <p style="font-size: 12pt !important;">${activeSkl.penutup || "[Silakan isi kalimat penutup dokumen di halaman format SKL]"}</p>
                     </div>
 
-                    <!-- Bagian Tanda Tangan -->
                     <div class="mt-10 flex justify-end px-8">
                         <div class="text-center w-80 text-sm" style="font-size: 12pt !important;">
-                            <p style="font-size: 12pt !important;"><span>${sklMetadata.tempat || "Tanah Keras"}</span>, <span>${formattedDocDate}</span></p>
+                            <p style="font-size: 12pt !important;"><span>${activeSkl.tempat || "Tanah Keras"}</span>, <span>${formattedDocDate}</span></p>
                             <p class="mt-1" style="font-size: 12pt !important;">Kepala Sekolah,</p>
                             <div class="h-24"></div>
                             <p class="font-extrabold underline" style="font-size: 12pt !important;">${formattedKepsek}</p>
-                            <p style="font-size: 10pt !important;">NIP. <span>${sklMetadata.nip || "[NIP KEPALA SEKOLAH]"}</span></p>
+                            <p style="font-size: 10pt !important;">NIP. <span>${activeSkl.nip || "[NIP KEPALA SEKOLAH]"}</span></p>
                         </div>
                     </div>
                 </div>
-                ${pageWrapperEnd}
             `;
         }
 
         function renderSklPreview() {
             const select = document.getElementById('select-cetak-siswa');
-            const studentId = select.value;
-            const student = siswaList.find(s => s.id == studentId);
+            if (!select) return;
+            
+            let studentId = select.value;
+            let student = findStudentById(studentId); 
 
             const printArea = document.getElementById('print-area');
+            if (!printArea) return;
+
+            if (!student && siswaList.length > 0 && select.selectedIndex >= 0) {
+                student = siswaList[select.selectedIndex];
+            }
 
             if (!student) {
                 printArea.innerHTML = `
                     <div class="text-center p-12 text-slate-500 italic">
-                        Belum ada data siswa terdaftar. Silakan tambahkan data siswa terlebih dahulu.
+                        Belum ada data siswa terdaftar atau terpilih. Silakan daftarkan siswa baru pada tab "Data Siswa".
                     </div>
                 `;
                 return;
             }
 
-            printArea.innerHTML = generateSklHtml(student, false);
+            try {
+                printArea.innerHTML = generateSklHtml(student, false);
+            } catch(e) {
+                console.error("Gagal merender SKL preview: ", e);
+                printArea.innerHTML = `
+                    <div class="text-center p-12 text-rose-500 font-bold">
+                        Terjadi kesalahan saat membuat pratinjau SKL. Periksa apakah data mata pelajaran atau nilai siswa valid.
+                    </div>
+                `;
+            }
         }
 
         function cetakSemuaSiswa() {
@@ -1946,25 +2624,20 @@
                 return;
             }
 
-            // Simpan pratinjau asli
             const originalContent = document.getElementById('print-area').innerHTML;
             const originalClassList = document.getElementById('print-area').className;
 
-            // Generate gabungan seluruh lembar cetak SKL
             let allSklsHtml = '';
             siswaList.forEach(student => {
                 allSklsHtml += generateSklHtml(student, true);
             });
 
-            // Set konten ke kontainer cetak
             const printArea = document.getElementById('print-area');
             printArea.innerHTML = allSklsHtml;
-            printArea.className = "bg-white text-black font-sans"; // Bersihkan kelas overflow untuk cetak massal
+            printArea.className = "bg-white text-black font-sans";
 
-            // Panggil dialog printer asli bawaan sistem
             window.print();
 
-            // Kembalikan pratinjau tunggal semula
             printArea.innerHTML = originalContent;
             printArea.className = originalClassList;
             
