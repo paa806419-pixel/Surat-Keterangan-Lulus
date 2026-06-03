@@ -56,6 +56,26 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #1bc4b5;
         }
+
+        /* Animasi garis berjalan (stripes) pada Progress Bar */
+        @keyframes progress-stripe {
+            0% { background-position: 0 0; }
+            100% { background-position: 30px 0; }
+        }
+        .progress-bar-animated {
+            background-image: linear-gradient(
+                45deg,
+                rgba(255, 255, 255, 0.15) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, 0.15) 50%,
+                rgba(255, 255, 255, 0.15) 75%,
+                transparent 75%,
+                transparent
+            );
+            background-size: 30px 30px;
+            animation: progress-stripe 1s linear infinite;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen overflow-x-hidden flex">
@@ -74,8 +94,8 @@
                         <img src="https://iili.io/BLlwHwQ.png" class="w-full h-full object-contain animate-pulse" alt="Logo UPT SDN 22 Tanah Keras">
                     </div>
                     <div>
-                        <h2 class="font-extrabold text-lg tracking-wider text-white">UPT SDN 22 TANAH KERAS</h2>
-                        <p class="text-xs text-blue-100 font-medium">Pengelola : Fauzi, S.Hum</p>
+                        <h2 class="font-extrabold text-lg tracking-wider text-white">UPT SDN 22</h2>
+                        <p class="text-xs text-blue-100 font-medium">Tanah Keras</p>
                     </div>
                 </div>
 
@@ -125,7 +145,7 @@
 
                 <div class="text-center lg:text-left">
                     <h3 class="text-2xl font-extrabold text-slate-950">Selamat Datang</h3>
-                    <p class="text-sm text-slate-800 mt-2">Aplikasi Surat Keterangan Kelulusan.</p>
+                    <p class="text-sm text-slate-800 mt-2">Silakan masuk menggunakan akun administratif sekolah Anda.</p>
                 </div>
 
                 <!-- Error Alert Box -->
@@ -163,12 +183,12 @@
                     </div>
 
                     <button type="submit" class="w-full bg-slate-950 hover:bg-slate-900 text-[#27F5E4] hover:text-white font-extrabold py-4 rounded-xl shadow-lg transition-all transform active:scale-[0.98] tracking-wider text-sm uppercase">
-                        Masuk 
+                        Masuk ke Aplikasi
                     </button>
                 </form>
 
                 <div class="text-center text-xs text-slate-900 font-semibold">
-                    Sistem Penilaian UPT SDN 22 Tanah Keras &copy; 2026.
+                    Sistem Penilaian UPT SDN 22 Tanah Keras &copy; 2026. All Rights Reserved.
                 </div>
             </div>
         </div>
@@ -186,8 +206,8 @@
                         <img src="https://iili.io/BLlwHwQ.png" class="w-full h-full object-contain animate-pulse" alt="Logo UPT SDN 22">
                     </div>
                     <div>
-                        <h2 class="font-extrabold text-sm tracking-wider text-white">UPT SDN 22 TK</h2>
-                        <p class="text-xs text-blue-100 font-medium">Pengelola : Fauzi, S.Hum</p>
+                        <h2 class="font-extrabold text-sm tracking-wider text-white">UPT SDN 22</h2>
+                        <p class="text-xs text-blue-100 font-medium">Tanah Keras</p>
                     </div>
                 </div>
             </div>
@@ -200,7 +220,7 @@
                 </button>
                 <button onclick="switchTab('data-skl')" id="btn-data-skl" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                    Data SKL
+                    Data SKL (Format)
                 </button>
                 <button onclick="switchTab('data-siswa')" id="btn-data-siswa" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
@@ -224,11 +244,11 @@
                 </button>
                 <button onclick="switchTab('tarik-data')" id="btn-tarik-data" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/></svg>
-                    Tarik Data
+                    Tarik Data (Cloud)
                 </button>
                 <button onclick="switchTab('arsip-data')" id="btn-arsip-data" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
-                    Arsip Data 
+                    Arsip Data (Multi-Year)
                 </button>
             </nav>
 
@@ -238,7 +258,7 @@
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
                     </svg>
-                    KELUAR
+                    Keluar Sesi (Logout)
                 </button>
                 <div class="flex items-center gap-3 text-xs text-blue-100 px-4">
                     <span class="flex h-2.5 w-2.5 relative">
@@ -427,7 +447,7 @@
                 <section id="tab-data-skl" class="hidden space-y-6">
                     <div class="flex items-center justify-between">
                         <div>
-                            <h2 class="text-2xl font-bold text-slate-900">Pengaturan Format SKL</h2>
+                            <h2 class="text-2xl font-bold text-slate-900">Pengaturan Format & Metadata SKL</h2>
                             <p class="text-xs text-slate-500 mt-1">Data ini digunakan sebagai template header, nomor, penandatanganan dokumen, dan penanggalan.</p>
                         </div>
                     </div>
@@ -751,8 +771,8 @@
                 <section id="tab-tarik-data" class="hidden space-y-6">
                     <div class="flex items-center justify-between">
                         <div>
-                            <h2 class="text-2xl font-bold text-slate-900">Tarik Data & Hubungkan</h2>
-                            <p class="text-xs text-slate-500 mt-1 font-medium"></p>
+                            <h2 class="text-2xl font-bold text-slate-900">Tarik & Sinkronkan Data Cloud</h2>
+                            <p class="text-xs text-slate-500 mt-1 font-medium">Kunci integrasi Google Sheets Anda. Koneksi aman real-time tanpa penulisan manual.</p>
                         </div>
                     </div>
 
@@ -765,12 +785,12 @@
                             </div>
                             <div>
                                 <h3 class="text-base font-extrabold text-slate-900 flex items-center gap-2">
-                                    Koneksi Database
+                                    Koneksi Database Cloud Google Sheets
                                     <span class="text-xs bg-amber-100 text-amber-800 border border-amber-200 px-2 py-0.5 rounded-full font-bold">
                                         <i class="fa-solid fa-lock mr-1"></i>URL Terkunci
                                     </span>
                                 </h3>
-                                <p class="text-xs text-slate-500 mt-0.5">Aplikasi dikonfigurasi murni menuju Database SDN 22 Tanah Keras secara permanen.</p>
+                                <p class="text-xs text-slate-500 mt-0.5">Aplikasi dikonfigurasi murni menuju server cloud Google SDN 22 Tanah Keras secara permanen.</p>
                             </div>
                         </div>
                         
@@ -780,7 +800,7 @@
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2a4 4 0 00-4-4H5m10 4v-2a4 4 0 014-4h5M2 20h20M5 17V5a2 2 0 012-2h10a2 2 0 012 2v12"/>
                                 </svg>
-                                Database
+                                Database (Buka Google Sheet)
                             </a>
                         </div>
                         
@@ -788,7 +808,7 @@
                         <div class="space-y-4 border-t border-slate-100 pt-4">
                             <div class="space-y-1.5">
                                 <div class="flex justify-between items-center">
-                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700">URL Web APLIKASI</label>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700">URL Web App Google Apps Script</label>
                                     <span class="text-[10px] text-amber-600 font-bold"><i class="fa-solid fa-triangle-exclamation mr-1"></i>Tidak dapat diedit / dihapus</span>
                                 </div>
                                 <div class="relative">
@@ -1033,6 +1053,38 @@
                 <button id="btn-confirm-ok" class="px-6 py-3 bg-slate-950 text-white hover:bg-slate-900 font-extrabold rounded-xl text-xs uppercase tracking-wider transition-all">
                     Ya, Lanjutkan
                 </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL PROGRESS BAR TARIK DATA (KOTAK PUTIH DENGAN ANIMASI GARIS JALAN BIRU) -->
+    <div id="modal-progress" class="fixed inset-0 bg-slate-950/85 backdrop-blur-sm z-[60] flex items-center justify-center p-4 hidden no-print">
+        <div class="bg-white border border-slate-200 rounded-3xl w-full max-w-md shadow-2xl p-6 md:p-8 text-center space-y-6 flex flex-col items-center">
+            <!-- Loading Indicator Icon -->
+            <div class="w-16 h-16 bg-blue-50 border border-blue-100 text-blue-600 rounded-full flex items-center justify-center shadow-inner">
+                <i class="fa-solid fa-cloud-arrow-down text-2xl animate-bounce"></i>
+            </div>
+            
+            <div class="space-y-1.5 w-full">
+                <h3 class="text-xl font-extrabold text-slate-950">Menarik Data Cloud...</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Menghubungkan & mendownload database SDN 22 dari Google Sheets.</p>
+            </div>
+
+            <!-- Progress Bar Container -->
+            <div class="w-full space-y-2">
+                <div class="flex justify-between items-center text-xs font-bold text-slate-700 px-1">
+                    <span>Progres Unduhan</span>
+                    <span id="progress-bar-text" class="text-blue-600">1%</span>
+                </div>
+                <!-- Outer Bar -->
+                <div class="w-full bg-slate-100 rounded-full h-4 overflow-hidden relative border border-slate-200">
+                    <!-- Inner Bar (Blue stripes animated) -->
+                    <div id="progress-bar-fill" class="h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transition-all duration-100 progress-bar-animated" style="width: 1%;"></div>
+                </div>
+            </div>
+
+            <div class="text-[10px] text-slate-400 font-medium italic">
+                * Jangan menutup peramban atau mematikan koneksi internet Anda selama proses berlangsung.
             </div>
         </div>
     </div>
@@ -1422,37 +1474,89 @@
             showNotification("Koneksi terputus! Aplikasi kini berjalan dalam mode Lokal (Offline).");
         }
 
-        // TARIK DATA CLOUD MANUAL (Menggunakan URL Bawaan yang Dikunci)
+        // TARIK DATA CLOUD MANUAL DENGAN ANIMASI PROGRES 1%-100% GARIS BERJALAN BIRU (Sesuai Permintaan)
         function pullCloudDatabase() {
             const url = DEFAULT_GSCRIPT_URL;
             updateCloudStatus("Menarik Data...", "amber");
-            showNotification("Sedang menarik data terbaru dari Google Sheets...");
 
+            // Tampilkan Modal Progres Box Warna Putih
+            const progressModal = document.getElementById('modal-progress');
+            const progressBar = document.getElementById('progress-bar-fill');
+            const progressText = document.getElementById('progress-bar-text');
+
+            if (!progressModal || !progressBar || !progressText) return;
+
+            // Inisialisasi visual progres
+            progressModal.classList.remove('hidden');
+            progressBar.style.width = '1%';
+            progressText.textContent = '1%';
+
+            let currentPercent = 1;
+            let fetchDone = false;
+            let fetchedData = null;
+            let fetchError = null;
+
+            // Jalankan pengambilan data asinkronus ke Google Sheets Web App
             fetch(url)
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) throw new Error('Respon server gagal');
+                    return response.json();
+                })
                 .then(data => {
-                    if (data) {
-                        kopMetadata = data.kopMetadata || kopMetadata;
-                        sklMetadata = data.sklMetadata || sklMetadata;
-                        
-                        if (data.mapelList && data.mapelList.length > 0) {
-                            mapelList = data.mapelList;
-                        }
-                        
-                        siswaList = data.siswaList || siswaList;
-                        arsipList = data.arsipList || arsipList;
-
-                        initForms();
-                        renderAll();
-                        updateCloudStatus("Tersambung (Cloud)", "emerald");
-                        showNotification("Sukses! Data terbaru berhasil ditarik.");
-                    }
+                    fetchedData = data;
+                    fetchDone = true;
                 })
                 .catch(err => {
                     console.error(err);
-                    updateCloudStatus("Gagal Tarik", "rose");
-                    showNotification("Gagal mengambil data dari Google Sheets. Periksa koneksi internet Anda.");
+                    fetchError = err;
+                    fetchDone = true;
                 });
+
+            // Jalankan animasi persentase progres dinamis
+            const progressInterval = setInterval(() => {
+                if (!fetchDone) {
+                    // Jika data sedang diunduh, naikkan angka secara perlahan (maksimal 91%)
+                    if (currentPercent < 91) {
+                        currentPercent += Math.floor(Math.random() * 3) + 1;
+                        if (currentPercent > 91) currentPercent = 91;
+                    }
+                } else {
+                    // Jika data selesai diunduh, akselerasi persentase ke 100%
+                    currentPercent += Math.floor(Math.random() * 10) + 5;
+                    if (currentPercent >= 100) {
+                        currentPercent = 100;
+                        clearInterval(progressInterval); // Berhentikan interval animasi
+
+                        // Tunggu animasi transisi sejenak sebelum menutup modal progres
+                        setTimeout(() => {
+                            progressModal.classList.add('hidden'); // Tutup modal progres
+
+                            if (fetchError) {
+                                updateCloudStatus("Gagal Tarik", "rose");
+                                showNotification("Gagal mengambil data dari Google Sheets. Periksa koneksi internet Anda.");
+                            } else if (fetchedData) {
+                                // Terapkan data ke state memori aktif
+                                kopMetadata = fetchedData.kopMetadata || kopMetadata;
+                                sklMetadata = fetchedData.sklMetadata || sklMetadata;
+                                if (fetchedData.mapelList && fetchedData.mapelList.length > 0) {
+                                    mapelList = fetchedData.mapelList;
+                                }
+                                siswaList = fetchedData.siswaList || siswaList;
+                                arsipList = fetchedData.arsipList || arsipList;
+
+                                initForms();
+                                renderAll();
+                                updateCloudStatus("Tersambung (Cloud)", "emerald");
+                                showNotification("Sukses! Data terbaru berhasil ditarik.");
+                            }
+                        }, 400);
+                    }
+                }
+
+                // Perbarui posisi bar biru & teks angka
+                progressBar.style.width = currentPercent + '%';
+                progressText.textContent = currentPercent + '%';
+            }, 40); // Interval pembaruan animasi per 40ms
         }
 
         function updateCloudStatus(text, color) {
@@ -1964,7 +2068,7 @@
                     
                     renderSiswaTable();
                     renderDashboardStats();
-                    showNotification(`Data Siswa "${nama}" berhasil dihapus.`);
+                    showNotification(`Data Siswa "${nama}" berhasil deleted.`);
                     dispatchCloudPush();
                 }
             }
