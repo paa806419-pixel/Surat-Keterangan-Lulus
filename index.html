@@ -8,6 +8,8 @@
     <link class="no-print" rel="icon" type="image/png" href="https://iili.io/BLlwHwQ.png">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN untuk Ikon Navigasi dan Aksi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700;800&family=Playfair+Display:ital,wght=0,400;0,700;1,400&display=swap');
         
@@ -72,8 +74,8 @@
                         <img src="https://iili.io/BLlwHwQ.png" class="w-full h-full object-contain animate-pulse" alt="Logo UPT SDN 22 Tanah Keras">
                     </div>
                     <div>
-                        <h2 class="font-extrabold text-lg tracking-wider text-white">UPT SDN 22 TANAH KERAS</h2>
-                        <p class="text-xs text-blue-100 font-medium">Pengelola : Fauzi, S.Hum</p>
+                        <h2 class="font-extrabold text-lg tracking-wider text-white">UPT SDN 22</h2>
+                        <p class="text-xs text-blue-100 font-medium">Tanah Keras</p>
                     </div>
                 </div>
 
@@ -122,8 +124,8 @@
                 </div>
 
                 <div class="text-center lg:text-left">
-                    <h3 class="text-2xl font-extrabold text-slate-950">SELAMAT DATANG</h3>
-                    <p class="text-sm text-slate-800 mt-2">APLIKASI SURAT KETERANGAN LULUS.</p>
+                    <h3 class="text-2xl font-extrabold text-slate-950">Selamat Datang</h3>
+                    <p class="text-sm text-slate-800 mt-2">Silakan masuk menggunakan akun administratif sekolah Anda.</p>
                 </div>
 
                 <!-- Error Alert Box -->
@@ -166,7 +168,7 @@
                 </form>
 
                 <div class="text-center text-xs text-slate-900 font-semibold">
-                    Sistem Penilaian UPT SDN 22 Tanah Keras &copy; 2026. 
+                    Sistem Penilaian UPT SDN 22 Tanah Keras &copy; 2026. All Rights Reserved.
                 </div>
             </div>
         </div>
@@ -184,8 +186,8 @@
                         <img src="https://iili.io/BLlwHwQ.png" class="w-full h-full object-contain animate-pulse" alt="Logo UPT SDN 22">
                     </div>
                     <div>
-                        <h2 class="font-extrabold text-sm tracking-wider text-white">UPT SDN 22 TK</h2>
-                        <p class="text-xs text-blue-100 font-medium">Pengelola : Fauzi, S.Hum</p>
+                        <h2 class="font-extrabold text-sm tracking-wider text-white">UPT SDN 22</h2>
+                        <p class="text-xs text-blue-100 font-medium">Tanah Keras</p>
                     </div>
                 </div>
             </div>
@@ -222,11 +224,11 @@
                 </button>
                 <button onclick="switchTab('tarik-data')" id="btn-tarik-data" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/></svg>
-                    Tarik Data 
+                    Tarik Data (Cloud)
                 </button>
                 <button onclick="switchTab('arsip-data')" id="btn-arsip-data" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 text-blue-100 hover:bg-white/10 hover:text-white">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
-                    Arsip Data 
+                    Arsip Data (Multi-Year)
                 </button>
             </nav>
 
@@ -236,7 +238,7 @@
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
                     </svg>
-                    Keluar 
+                    Keluar Sesi (Logout)
                 </button>
                 <div class="flex items-center gap-3 text-xs text-blue-100 px-4">
                     <span class="flex h-2.5 w-2.5 relative">
@@ -788,7 +790,7 @@
                             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                                 <button onclick="connectCloudDatabase()" class="bg-slate-950 hover:bg-slate-900 text-[#27F5E4] hover:text-white font-extrabold py-3.5 rounded-xl text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-md active:scale-95">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 00-5.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
                                     </svg>
                                     Hubungkan
                                 </button>
@@ -1177,65 +1179,20 @@
             return '';
         }
 
-        // ONLOAD INITIALIZATION
-        window.onload = function() {
-            checkAuthStatus();
-            initLocalStorageData();
-            initForms();
-            renderAll();
-            
-            autoConnectGoogleSheetsOnLoad();
-            
-            document.addEventListener('fullscreenchange', () => {
-                const icon = document.getElementById('fullscreen-icon');
-                const text = document.getElementById('fullscreen-text');
-                if (!icon || !text) return;
-                
-                if (document.fullscreenElement) {
-                    text.textContent = 'Keluar Layar Penuh';
-                    icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 14h4v4m0-4l-5 5m11-5h4v4m0-4l5 5M4 10h4V6m0 4L3 3m11 3v4h4m-4 0l-5-5"/>`;
-                } else {
-                    text.textContent = 'Layar Penuh';
-                    icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l-5-5m11 5v-4m0 4h-4m4 0l-5-5"/>`;
-                }
-            });
-        };
-
+        // MEMPERBAIKI KETERGANTUNGAN LOCAL STORAGE & CACHE BROWSER SINKRONISASI
         function initLocalStorageData() {
-            const savedKop = localStorage.getItem('kopMetadata');
-            const savedSkl = localStorage.getItem('sklMetadata');
-            const savedMapel = localStorage.getItem('mapelList');
-            const savedSiswa = localStorage.getItem('siswaList');
-            const savedArsip = localStorage.getItem('arsipList');
-
-            try {
-                if (savedKop) kopMetadata = JSON.parse(savedKop);
-            } catch(e) { console.error("KOP parse error", e); }
-
-            try {
-                if (savedSkl) sklMetadata = JSON.parse(savedSkl);
-            } catch(e) { console.error("SKL parse error", e); }
-
-            try {
-                if (savedMapel) {
-                    const parsed = JSON.parse(savedMapel);
-                    if (Array.isArray(parsed)) mapelList = parsed;
-                }
-            } catch(e) { console.error("Mapel parse error", e); }
-
-            try {
-                if (savedSiswa) {
-                    const parsed = JSON.parse(savedSiswa);
-                    if (Array.isArray(parsed)) siswaList = parsed;
-                }
-            } catch(e) { console.error("Siswa parse error", e); }
-
-            try {
-                if (savedArsip) {
-                    const parsed = JSON.parse(savedArsip);
-                    if (Array.isArray(parsed)) arsipList = parsed;
-                }
-            } catch(e) { console.error("Arsip parse error", e); }
+            // Hapus cache database lama dari Local Storage browser agar bebas sisa sampah data
+            localStorage.removeItem('kopMetadata');
+            localStorage.removeItem('sklMetadata');
+            localStorage.removeItem('mapelList');
+            localStorage.removeItem('siswaList');
+            localStorage.removeItem('arsipList');
+            
+            // Inisialisasi data murni di memori (RAM state)
+            kopMetadata = { ...defaultKop };
+            sklMetadata = { ...defaultSkl };
+            siswaList = [];
+            arsipList = [];
         }
 
         function insertFormat(tag) {
@@ -1384,12 +1341,7 @@
                             siswaList = data.siswaList || siswaList;
                             arsipList = data.arsipList || arsipList;
                             
-                            localStorage.setItem('kopMetadata', JSON.stringify(kopMetadata));
-                            localStorage.setItem('sklMetadata', JSON.stringify(sklMetadata));
-                            localStorage.setItem('mapelList', JSON.stringify(mapelList));
-                            localStorage.setItem('siswaList', JSON.stringify(siswaList));
-                            localStorage.setItem('arsipList', JSON.stringify(arsipList));
-
+                            // Hanya update memori, bebas dari penyimpanan Local Storage untuk integritas data!
                             initForms();
                             renderAll();
                             updateCloudStatus("Tersambung (Cloud)", "emerald");
@@ -1433,12 +1385,6 @@
                         siswaList = data.siswaList || siswaList;
                         arsipList = data.arsipList || arsipList;
 
-                        localStorage.setItem('kopMetadata', JSON.stringify(kopMetadata));
-                        localStorage.setItem('sklMetadata', JSON.stringify(sklMetadata));
-                        localStorage.setItem('mapelList', JSON.stringify(mapelList));
-                        localStorage.setItem('siswaList', JSON.stringify(siswaList));
-                        localStorage.setItem('arsipList', JSON.stringify(arsipList));
-
                         initForms();
                         renderAll();
                         updateCloudStatus("Tersambung (Cloud)", "emerald");
@@ -1466,7 +1412,7 @@
 
         // TARIK DATA CLOUD MANUAL
         function pullCloudDatabase() {
-            const url = localStorage.getItem('gscript_web_app_url');
+            const url = localStorage.getItem('gscript_web_app_url') || DEFAULT_GSCRIPT_URL;
             if (!url) {
                 showNotification('Aplikasi belum terhubung! Silakan klik tombol "Hubungkan" terlebih dahulu.');
                 return;
@@ -1488,12 +1434,6 @@
                         
                         siswaList = data.siswaList || siswaList;
                         arsipList = data.arsipList || arsipList;
-
-                        localStorage.setItem('kopMetadata', JSON.stringify(kopMetadata));
-                        localStorage.setItem('sklMetadata', JSON.stringify(sklMetadata));
-                        localStorage.setItem('mapelList', JSON.stringify(mapelList));
-                        localStorage.setItem('siswaList', JSON.stringify(siswaList));
-                        localStorage.setItem('arsipList', JSON.stringify(arsipList));
 
                         initForms();
                         renderAll();
@@ -1530,7 +1470,7 @@
         }
 
         function dispatchCloudPush() {
-            const url = localStorage.getItem('gscript_web_app_url');
+            const url = localStorage.getItem('gscript_web_app_url') || DEFAULT_GSCRIPT_URL;
             if (!url) return; 
 
             updateCloudStatus("Menyimpan...", "amber");
@@ -1643,7 +1583,6 @@
                 arsipList.push(archivePayload);
             }
 
-            localStorage.setItem('arsipList', JSON.stringify(arsipList));
             dispatchCloudPush(); 
             showNotification(`Data kelulusan Tahun Pelajaran ${tahun} sukses diarsipkan!`);
 
@@ -1653,7 +1592,6 @@
                     "Data berhasil disimpan di arsip. Apakah Anda ingin mengosongkan data siswa aktif saat ini agar dapat menginput data siswa baru di tahun pelajaran berikutnya?",
                     () => {
                         siswaList = [];
-                        localStorage.setItem('siswaList', JSON.stringify(siswaList));
                         renderSiswaTable();
                         renderDashboardStats();
                         showNotification("Data siswa aktif telah dikosongkan. Sistem siap digunakan untuk tahun ajaran baru!");
@@ -1771,11 +1709,13 @@
             document.getElementById('arsip-detail-container').scrollIntoView({ behavior: 'smooth' });
         }
 
+        // TAMPILAN DETAIL ARSIP TUTUP
         function closeArsipDetail() {
             document.getElementById('arsip-detail-container').classList.add('hidden');
             selectedArsipId = null;
         }
 
+        // HAPUS ARSIP DARI DATABASE
         function deleteArsip(arsipId) {
             const index = arsipList.findIndex(a => normalizeId(a.id) === normalizeId(arsipId));
             if (index > -1) {
@@ -1785,7 +1725,6 @@
                     `Apakah Anda benar-benar yakin ingin menghapus seluruh rekaman arsip Tahun Pelajaran ${tahun}? Tindakan ini bersifat permanen!`,
                     () => {
                         arsipList.splice(index, 1);
-                        localStorage.setItem('arsipList', JSON.stringify(arsipList));
                         renderArsipTable();
                         populateTahunArsipDropdown();
                         closeArsipDetail();
@@ -1832,7 +1771,6 @@
             kopMetadata.email = document.getElementById('kop-email').value.trim();
             kopMetadata.website = document.getElementById('kop-website').value.trim();
 
-            localStorage.setItem('kopMetadata', JSON.stringify(kopMetadata));
             showNotification('KOP Surat berhasil diperbarui!');
             dispatchCloudPush();
         }
@@ -1852,7 +1790,6 @@
             sklMetadata.pernyataan = document.getElementById('skl-pernyataan').value.trim();
             sklMetadata.penutup = document.getElementById('skl-penutup').value.trim();
 
-            localStorage.setItem('sklMetadata', JSON.stringify(sklMetadata));
             showNotification('Pengaturan Template SKL berhasil disimpan!');
             dispatchCloudPush();
         }
@@ -1879,7 +1816,6 @@
             const id = "MAPEL-" + Date.now() + "-" + Math.floor(Math.random() * 1000);
             mapelList.push({ id, nama: text, kategori });
 
-            localStorage.setItem('mapelList', JSON.stringify(mapelList));
             closeMapelModal();
             renderMapelTable();
             renderDashboardStats();
@@ -1904,7 +1840,6 @@
             const id = "MAPEL-" + Date.now() + "-" + Math.floor(Math.random() * 1000);
             mapelList.push({ id, nama: text, kategori });
 
-            localStorage.setItem('mapelList', JSON.stringify(mapelList));
             input.value = ''; 
             renderMapelTable();
             renderDashboardStats();
@@ -1920,7 +1855,6 @@
                     const nama = mapelList[index].nama;
                     mapelList.splice(index, 1);
                     
-                    localStorage.setItem('mapelList', JSON.stringify(mapelList));
                     renderMapelTable();
                     renderDashboardStats();
                     showNotification(`Mata Pelajaran "${nama}" berhasil dihapus.`);
@@ -2006,7 +1940,6 @@
                 nilai: initialNilai
             });
 
-            localStorage.setItem('siswaList', JSON.stringify(siswaList));
             closeSiswaModal();
             renderSiswaTable();
             renderDashboardStats();
@@ -2022,7 +1955,6 @@
                     const nama = siswaList[index].nama;
                     siswaList.splice(index, 1);
                     
-                    localStorage.setItem('siswaList', JSON.stringify(siswaList));
                     renderSiswaTable();
                     renderDashboardStats();
                     showNotification(`Data Siswa "${nama}" berhasil dihapus.`);
@@ -2159,7 +2091,6 @@
                 }
             }
 
-            if (emptyState) extinction_class = 'hidden'; // helper
             if (emptyState) emptyState.classList.add('hidden');
             if (wrapper) wrapper.classList.remove('hidden');
 
@@ -2244,7 +2175,6 @@
                 return;
             }
 
-            localStorage.setItem('siswaList', JSON.stringify(siswaList));
             renderSiswaTable();
             showNotification(`Nilai untuk siswa "${student.nama}" berhasil disimpan!`);
             dispatchCloudPush();
