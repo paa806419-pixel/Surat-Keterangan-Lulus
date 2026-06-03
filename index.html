@@ -855,7 +855,7 @@
                             <svg class="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
-                            <span class="font-medium">Terhubung ke Google Sheets. Seluruh data (KOP, Format SKL, Siswa, Mapel, dan Nilai) tersinkronisasi otomatis di awan.</span>
+                            <span class="font-medium">Terhubung Ke Database</span>
                         </div>
                     </div>
                 </section>
@@ -1066,8 +1066,8 @@
             </div>
             
             <div class="space-y-1.5 w-full">
-                <h3 class="text-xl font-extrabold text-slate-950">Menarik Data Cloud...</h3>
-                <p class="text-xs text-slate-500 leading-relaxed">Menghubungkan & mendownload database SDN 22 dari Google Sheets.</p>
+                <h3 class="text-xl font-extrabold text-slate-950">Tarik Data</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Harap Tunggu.</p>
             </div>
 
             <!-- Progress Bar Container -->
@@ -1431,7 +1431,7 @@
         function connectCloudDatabase() {
             const urlInput = DEFAULT_GSCRIPT_URL; 
             updateCloudStatus("Menghubungkan...", "amber");
-            showNotification("Menghubungkan ke database cloud SDN 22...");
+            showNotification("Menghubungkan ke database SDN 22 TK");
 
             fetch(urlInput)
                 .then(response => response.json())
